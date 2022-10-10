@@ -5,15 +5,23 @@
     position: fixed;
     bottom: 0rem;
     background: #10151e;
-    width: 97vw;
-    border-radius: 5px;
-    margin: 0.3rem;
+    width: 100vw;
+    
+   
     .navbar{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: .7rem;
+    padding: 0.7rem;
     margin: 0;
+    background: #151b26;//#ffffff0a;
+    margin: 0.5rem;
+    border-radius: 5px;
+    
+    
+    
+    
+    
     li{
         display: flex;
         color: #6e6e6e6e;
@@ -30,6 +38,7 @@
 .hide{
     opacity: 0;
     width: 0;
+    display:none; // this property is very important here, as it fix design issue
 }
 .active{
     color: #fff !important;
