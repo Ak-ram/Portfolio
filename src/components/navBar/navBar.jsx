@@ -28,16 +28,22 @@ const NavBar = () => {
         </li>
 
         <li className="link" onClick={(e) => handleNavLink(e)}>
-          <BsFillGridFill />
-          <span className="hide linkText">Works</span>
+          <Link to={"./projects"}>
+            <BsFillGridFill />
+            <span className="hide linkText">Projects</span>
+          </Link>
         </li>
         <li className="link" onClick={(e) => handleNavLink(e)}>
-          <BsVectorPen />
-          <span className="hide linkText">Blog</span>
+          <Link to={"./blog"}>
+            <BsVectorPen />
+            <span className="hide linkText">Blog</span>
+          </Link>
         </li>
         <li className="link" onClick={(e) => handleNavLink(e)}>
-          <BsPersonBoundingBox />
-          <span className="hide linkText">Me</span>
+          <Link to={"./profile"}>
+            <BsPersonBoundingBox />
+            <span className="hide linkText">Profile</span>
+          </Link>
         </li>
       </ul>
     </div>
