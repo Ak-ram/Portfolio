@@ -1,21 +1,20 @@
 import React from "react";
-import { FiSearch } from "react-icons/fi";
+import SearchBox from "../../components/searchBox/searchBox";
 import "./blog.scss";
 const Blog = () => {
   return (
     <div className="blog-page">
       <h2>Blogs</h2>
-      <div className="search-box">
-        <input
-          className="search-input"
-          type={"search"}
-          placeholder="What is in your mind ?"
-        />
-        <button>
-          <FiSearch />
-          Search
-        </button>
-      </div>
+      <SearchBox />
+      <ul className="topics">
+        <li>scss</li>
+        <li>react</li>
+        <li>git</li>
+        <li>javascript</li>
+        <li>javascript</li>
+        <li>javascript</li>
+        <li>javascript</li>
+      </ul>
     </div>
   );
 };
