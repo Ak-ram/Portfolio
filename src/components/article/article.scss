@@ -1,20 +1,24 @@
 article{
     height: 100px;
     display: flex;
-    gap: 1rem;
+    gap: 0.7rem;
     align-items: center;
+    background: rgb(0 40 60);
+    border-radius: 5px;
+    margin: .5rem 0;
+    padding: 0.3rem;
     img{
             // width: 50%;
     border-radius: 5px;
-    height: 90%;
+    height: 80%;
     }
     .article-content{
         span.time-of-read{
                 color: #ffffff9c;
-    font-size: 12px;
+    font-size: 10px;
         }
         .article-headline{
-                margin: 10px 0;
+                margin: 2vw 0;
         }
         .article-traffic{
                 display: flex;
