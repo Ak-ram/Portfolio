@@ -1,29 +1,22 @@
 .blog-page{
     color: #fff;
     padding: 1rem;
-    .search-box{
-            display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-    .search-input{
-            all: unset;
-    background: #151b26;
-    width: 100%;
-    height: 35px;
-    border-radius: 5px 0px 0px 5px;
-    padding: 0 1rem;
-    margin: 0 auto;
-    }
-    button{
-    all: unset;
-    background: rgb(0 160 240);
-    font-weight: bold;
-    padding: 0 .3rem;
-    border-radius: 0px 5px 5px 0px;
+   .topics{
+    list-style: none;
     display: flex;
+    justify-content: left;
+    padding: 0;
+    font-size: 14px;
+    width: 100%;
+    overflow: scroll;
+    gap: .5rem;
     align-items: center;
-    justify-content: center;
-    gap: .3rem;
+    > li{
+            padding: .4rem .6rem;
+    background: rgb(0 40 60);
+    border-radius: 10px;
+    line-height: 1;
+
     }
-    }
+   }
 }
