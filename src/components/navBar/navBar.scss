@@ -2,17 +2,17 @@
     transition: width .3s, flex-grow .3s, background .3s;
 }
 .navbar-container{
-        position: fixed;
+    position: fixed;
     bottom: 0rem;
-    background: #10151e; //#10151e;
-    width: 100vw;
+    background: #10151e;
+    width: 97vw;
+    border-radius: 5px;
+    margin: 0.3rem;
     .navbar{
     list-style: none;
     display: flex;
-    // background: rgb(0 40 60);
     justify-content: space-between;
-    padding: 1rem;
-
+    padding: .7rem;
     margin: 0;
     li{
         display: flex;
