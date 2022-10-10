@@ -1,0 +1,75 @@
+body{
+  margin: 0;
+  overflow:hidden;
+  padding: 2rem;
+  background:#000;
+}
+.wrapper{
+  display: flex;
+  h3{
+    font-size: 50px;
+    color: #fff;
+    height: 50vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    opacity: 0;
+    animation: fade ease .5s  5s forwards;
+  }
+}
+
+.wrapper span{
+  width: 15vw; // 10px 10pt 2rem 100vw
+  height: 1vw; // 10px 10pt
+  border-radius: 100%;
+  background: transparent;
+  display: inline-block;
+  margin: .5rem;
+  $shadow: null;
+  $max: 5;
+  @for $i from 1 through $max {
+      $shadow: $shadow 0rem $i*2+rem 0 $i/10 + rem rgb($i*80,$i*20,$i*50,$i) #{if($i !=$max, ',', '')};
+  }
+
+  box-shadow: $shadow;
+  position: absolute;
+   transform-origin: 0 220px;
+  // transform: rotate(calc(30deg * var(--i)));
+  transform: rotate(calc(30deg * var(--i)));
+
+  left: 50%;
+  animation: rotate ease 5s alternate forwards;
+}
+
+@keyframes rotate {
+  60%{
+    transform: rotate(45deg);
+        box-shadow: none;
+  }
+  
+    100%{
+      width:10px;
+      height:10px;
+        $shadow: null;
+  $max: 60;
+    // transform: rotate(360deg);
+      border-radius: 0;
+  @for $i from 1 through $max {
+      $shadow: $shadow $i*3+rem $i*2+rem 0 $i/10 + rem rgb($i*80,$i*20,$i*50,$i) #{if($i !=$max, ',', '')};
+    
+  }
+
+  box-shadow: $shadow;
+  }
+}
+
+
+@keyframes fade{
+  100%{
+    opacity: 1
+  }
+}
+
+
