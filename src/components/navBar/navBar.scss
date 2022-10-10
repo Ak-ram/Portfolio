@@ -10,7 +10,13 @@
     justify-content: space-between;
     padding: 1rem 3rem;
     margin: 0;
-    color: #c7ecee
+    color: #c7ecee;
+    li{
+            display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    }
     }
 }
 
