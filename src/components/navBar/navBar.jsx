@@ -12,26 +12,26 @@ const NavBar = () => {
     for (let i = 0; i < links.length; i++) {
       links[i].classList.add("hide");
     }
-    e.currentTarget.querySelector("i").classList.toggle("hide");
+    e.currentTarget.querySelector("span").classList.toggle("hide");
   };
   return (
     <div className="navbar-container">
       <ul className="navbar">
         <li onClick={(e) => handleNavLink(e)}>
           <ImHome />
-          <i className=" linkText">Home</i>
+          <span className="linkText">Home</span>
         </li>
         <li onClick={(e) => handleNavLink(e)}>
           <BsFillGridFill />
-          <i className="hide linkText">Works</i>
+          <span className="hide linkText">Works</span>
         </li>
         <li onClick={(e) => handleNavLink(e)}>
           <BsVectorPen />
-          <i className="hide linkText">Blog</i>
+          <span className="hide linkText">Blog</span>
         </li>
         <li onClick={(e) => handleNavLink(e)}>
           <BsPersonBoundingBox />
-          <i className="hide linkText">Me</i>
+          <span className="hide linkText">Me</span>
         </li>
       </ul>
     </div>
