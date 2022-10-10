@@ -19,15 +19,13 @@
     border-radius: 5px;
     
     
-    
-    
-    
     li{
         display: flex;
         color: #6e6e6e6e;
         gap: .5rem;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
         a{
     all: unset;
     padding: 0.3rem;
