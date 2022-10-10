@@ -13,7 +13,7 @@ const NavBar = () => {
       links[i].querySelector("span").classList.add("hide");
       links[i].classList.remove("active");
     }
-    e.currentTarget.classList.toggle("active");
+    e.currentTarget.classList.add("active");
     e.currentTarget.querySelector("span").classList.remove("hide");
   };
   return (
