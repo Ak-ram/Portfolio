@@ -9,7 +9,7 @@ const Blog = () => {
         <input
           className="search-input"
           type={"search"}
-          placeholder="search blog..."
+          placeholder="What is in your mind ?"
         />
         <button>
           <FiSearch />
