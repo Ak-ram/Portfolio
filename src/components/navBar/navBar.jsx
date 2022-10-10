@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./navBar.scss";
 import { ImHome } from "react-icons/im";
+import { Link } from "react-router-dom";
 import {
   BsVectorPen,
   BsFillGridFill,
@@ -20,9 +21,12 @@ const NavBar = () => {
     <div className="navbar-container">
       <ul className="navbar">
         <li className="active link" onClick={(e) => handleNavLink(e)}>
-          <ImHome />
-          <span className="linkText">Home</span>
+          <Link to={"./"}>
+            <ImHome />
+            <span className="linkText">Home</span>
+          </Link>
         </li>
+
         <li className="link" onClick={(e) => handleNavLink(e)}>
           <BsFillGridFill />
           <span className="hide linkText">Works</span>
