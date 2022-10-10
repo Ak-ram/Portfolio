@@ -10,7 +10,7 @@
   overflow: hidden;
   position: relative;
   // hide .wrapper after welcomeScreen animation ended
-  animation: hide .5s 4s ease forwards;
+  animation: hide .4s 3s ease forwards;
 
   h3{
     font-size: 50px;
@@ -22,7 +22,7 @@
     align-items: center;
     font-family: sans-serif;
     opacity: 0;
-    animation: fade ease .5s  3s forwards;
+    animation: fade ease .5s  2s forwards;
   }
   span{
   width: 15vw; // 10px 10pt 2rem 100vw
@@ -36,7 +36,7 @@
   transform-origin: 0 220px;
   transform: rotate(calc(30deg * var(--i)));
   left: 50%;
-  animation: rotate ease 3s alternate forwards;
+  animation: rotate ease 2s alternate forwards;
 }
 }
 
