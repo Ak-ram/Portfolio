@@ -1,5 +1,41 @@
 .blog-page{
     color: #fff;
     padding: 1rem;
-
+article{
+    height: 100px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    img{
+            // width: 50%;
+    border-radius: 5px;
+    height: 90%;
+    }
+    .article-content{
+        span.time-of-read{
+                color: #ffffff9c;
+    font-size: 12px;
+        }
+        .article-headline{
+                margin: 10px 0;
+        }
+        .article-traffic{
+                display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 1rem;
+        }
+    
+            
+            .likes, .comments{
+                display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+    color: #ffffff9c
+        }
+        
+        
+    }
+}
 }
