@@ -1,0 +1,21 @@
+@use "sass:list";
+
+@function coloredShadow(){
+  $shadow: null;
+  $colors: #74b9ff,#fd79a8,#e84393,#55efc4,#fdcb6e,#ff3838,#e056fd,#badc58,#22a6b3,#c7ecee;
+  $max: list.length($colors);
+  @for $i from 1 through $max {
+    $shadow: $shadow $i*4+rem $i*2+rem 0 $i/10 + rem  list.nth($colors,$i) #{if($i !=$max, ',', '')};
+  }
+  @return $shadow;
+}
+
+
+@function blankShadow(){
+  $shadow: null;
+  $max: 5;
+  @for $i from 1 through $max {
+      $shadow: $shadow 0rem $i*2+rem 0 $i/10 + rem rgb($i*00,$i*40,$i*60) #{if($i !=$max, ',', '')};
+  }
+  @return $shadow;
+}

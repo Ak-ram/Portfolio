@@ -1,0 +1,31 @@
+  @use "./_functions.scss" as *;
+  
+  @keyframes rotate {
+  60%{
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  100% {
+    width:3vw;
+    height:3vw;
+    box-shadow: coloredShadow()
+    }
+}
+
+ @keyframes fade{
+      100%{
+        opacity: 1;
+        transform: translate(2rem,2rem)
+      }
+    }
+    
+    
+      @keyframes hide {
+          100%{
+           transform: scale(0);
+           visibility: hidden
+       }
+  }
+  
+  
+
