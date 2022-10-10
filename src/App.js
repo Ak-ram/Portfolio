@@ -1,13 +1,15 @@
 import "./App.css";
-import WelcomeScreen from "./components/welcomeScreen/welcomeScreen";
+
+import {useEffect, useState} from "react";
+
 import NavBar from "./components/navBar/navBar";
-import { useEffect, useState } from "react";
+import WelcomeScreen from "./components/welcomeScreen/welcomeScreen";
+
 function App() {
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 3500);
-  }, []);
-  return <>{loading ? <WelcomeScreen /> : <NavBar />}</>;
+  useEffect(() => { setTimeout(() => setLoading(false), 3500); }, []);
+  return <>{loading ? <WelcomeScreen />: <NavBar />} <
+         />;
 }
 
 export default App;
