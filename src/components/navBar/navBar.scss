@@ -8,7 +8,7 @@
     display: flex;
     background: rgb(0 40 60);
     justify-content: space-between;
-    padding: 1rem 3rem;
+    padding: 1rem;
     margin: 0;
     color: #c7ecee;
     li{
@@ -17,10 +17,23 @@
     align-items: center;
     justify-content: center;
     }
+    span{
+        transition: all .3s;
+        padding: .3rem;
+    }
     }
 }
 
 .hide{
     transition: all .3s;
     opacity: 0;
+    width: 0;
+}
+.active{
+    color: #fff;
+    background: rgb(0 80 120 / 23%);
+    border-radius: 5px;
+    flex-grow: .5;
+    transition: all .3s;
+
 }

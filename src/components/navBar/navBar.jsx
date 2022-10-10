@@ -8,28 +8,30 @@ import {
 } from "react-icons/bs";
 const NavBar = () => {
   const handleNavLink = (e) => {
-    const links = document.querySelectorAll(".linkText");
+    const links = document.querySelectorAll(".link");
     for (let i = 0; i < links.length; i++) {
-      links[i].classList.add("hide");
+      links[i].querySelector("span").classList.add("hide");
+      links[i].classList.remove("active");
     }
-    e.currentTarget.querySelector("span").classList.toggle("hide");
+    e.currentTarget.classList.toggle("active");
+    e.currentTarget.querySelector("span").classList.remove("hide");
   };
   return (
     <div className="navbar-container">
       <ul className="navbar">
-        <li onClick={(e) => handleNavLink(e)}>
+        <li className="link" onClick={(e) => handleNavLink(e)}>
           <ImHome />
           <span className="linkText">Home</span>
         </li>
-        <li onClick={(e) => handleNavLink(e)}>
+        <li className="link" onClick={(e) => handleNavLink(e)}>
           <BsFillGridFill />
           <span className="hide linkText">Works</span>
         </li>
-        <li onClick={(e) => handleNavLink(e)}>
+        <li className="link" onClick={(e) => handleNavLink(e)}>
           <BsVectorPen />
           <span className="hide linkText">Blog</span>
         </li>
-        <li onClick={(e) => handleNavLink(e)}>
+        <li className="link" onClick={(e) => handleNavLink(e)}>
           <BsPersonBoundingBox />
           <span className="hide linkText">Me</span>
         </li>
