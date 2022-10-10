@@ -1,6 +1,7 @@
 import React from "react";
 import SearchBox from "../../components/searchBox/searchBox";
 import Filters from "../../components/filters/filters";
+import Article from "../../components/article/article";
 import "./blog.scss";
 const Blog = () => {
   return (
@@ -19,6 +20,12 @@ const Blog = () => {
           "Git",
         ]}
       />
+      <div className="articles-container">
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+      </div>
     </div>
   );
 };

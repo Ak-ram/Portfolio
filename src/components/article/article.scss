@@ -1,0 +1,43 @@
+article{
+
+        height: 100px;
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    background: rgb(0 131 197 / 6%);
+    border: 1px solid rgb(0 40 60);
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+    img{
+            // width: 50%;
+    border-radius: 5px;
+    height: 80%;
+    }
+    .article-content{
+        span.time-of-read{
+                color: #ffffff9c;
+    font-size: 10px;
+        }
+        .article-headline{
+                margin: 2vw 0;
+        }
+        .article-traffic{
+                display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 1rem;
+        }
+    
+            
+            .likes, .comments{
+                display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3rem;
+    color: #ffffff9c
+        }
+        
+        
+    }
+}
