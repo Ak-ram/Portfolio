@@ -7,12 +7,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => setLoading(false), 3500);
   }, []);
-  return (
-    <>
-      {loading ? <WelcomeScreen /> : ""}
-      <NavBar />
-    </>
-  );
+  return <>{loading ? <WelcomeScreen /> : <NavBar />}</>;
 }
 
 export default App;
