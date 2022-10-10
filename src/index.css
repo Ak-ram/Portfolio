@@ -8,6 +8,11 @@ body {
   background-color: #10151e;
 }
 
+/* Remove the blue highlight of button on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
