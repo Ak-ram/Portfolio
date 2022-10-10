@@ -19,7 +19,7 @@ const NavBar = () => {
   return (
     <div className="navbar-container">
       <ul className="navbar">
-        <li className="link" onClick={(e) => handleNavLink(e)}>
+        <li className="active link" onClick={(e) => handleNavLink(e)}>
           <ImHome />
           <span className="linkText">Home</span>
         </li>

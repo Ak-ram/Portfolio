@@ -1,39 +1,39 @@
+.navbar-container *{
+    transition: width .3s, flex-grow .3s, background .3s;
+}
 .navbar-container{
         position: fixed;
     bottom: 0rem;
-    background: #10151e;
+    background: #10151e; //#10151e;
     width: 100vw;
     .navbar{
     list-style: none;
     display: flex;
-    background: rgb(0 40 60);
+    // background: rgb(0 40 60);
     justify-content: space-between;
     padding: 1rem;
+
     margin: 0;
-    color: #c7ecee;
     li{
-            display: flex;
-    gap: .5rem;
-    align-items: center;
-    justify-content: center;
+        display: flex;
+        color: #6e6e6e6e;
+        gap: .5rem;
+        align-items: center;
+        justify-content: center;
     }
     span{
-        transition: all .3s;
         padding: .3rem;
     }
     }
 }
 
 .hide{
-    transition: all .3s;
     opacity: 0;
     width: 0;
 }
 .active{
-    color: #fff;
-    background: rgb(0 80 120 / 23%);
+    color: #fff !important;
+    background: #ffffff0a; // rgb(0 80 120 / 23%);
     border-radius: 5px;
     flex-grow: .5;
-    transition: all .3s;
-
 }
