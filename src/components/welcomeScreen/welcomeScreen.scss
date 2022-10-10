@@ -1,75 +1,89 @@
-body{
-  margin: 0;
-  overflow:hidden;
-  padding: 2rem;
-  background:#000;
+@use "sass:list";
+
+
+
+@function shadow(){
+  $shadow: null;
+  $colors: #74b9ff,#fd79a8,#e84393,#55efc4,#fdcb6e,#ff3838,#e056fd,#badc58,#22a6b3,#c7ecee;
+  $max: list.length($colors);
+  @for $i from 1 through $max {
+    $shadow: $shadow $i*4+rem $i*2+rem 0 $i/10 + rem  list.nth($colors,$i) #{if($i !=$max, ',', '')};
+  }
+  @return $shadow;
 }
+
+
+
+
+
+
 .wrapper{
   display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #10151e;
+  overflow: hidden;
+  position: relative;
+  // hide .wrapper after welcomeScreen animation ended
+  // animation: hide .4s 4s ease forwards;
+  // @keyframes hide {
+  //  100%{ opacity: 0}
+  // }
   h3{
     font-size: 50px;
     color: #fff;
     height: 50vh;
-    width: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
     opacity: 0;
-    animation: fade ease .5s  5s forwards;
+    animation: fade ease .5s  3s forwards;
+    @keyframes fade{
+      100%{
+        opacity: 1;
+        transform: translate(2rem,2rem)
+      }
+    }
   }
 }
 
 .wrapper span{
   width: 15vw; // 10px 10pt 2rem 100vw
-  height: 1vw; // 10px 10pt
-  border-radius: 100%;
+  height: 15vw; // 10px 10pt
+  // border-radius: 100%;
   background: transparent;
   display: inline-block;
   margin: .5rem;
   $shadow: null;
   $max: 5;
   @for $i from 1 through $max {
-      $shadow: $shadow 0rem $i*2+rem 0 $i/10 + rem rgb($i*80,$i*20,$i*50,$i) #{if($i !=$max, ',', '')};
+      $shadow: $shadow 0rem $i*2+rem 0 $i/10 + rem rgb($i*00,$i*40,$i*60) #{if($i !=$max, ',', '')};
   }
-
   box-shadow: $shadow;
+
   position: absolute;
    transform-origin: 0 220px;
-  // transform: rotate(calc(30deg * var(--i)));
   transform: rotate(calc(30deg * var(--i)));
 
   left: 50%;
-  animation: rotate ease 5s alternate forwards;
+  animation: rotate ease 3s alternate forwards;
 }
 
 @keyframes rotate {
   60%{
     transform: rotate(45deg);
-        box-shadow: none;
+    box-shadow: none;
   }
-  
-    100%{
-      width:10px;
-      height:10px;
-        $shadow: null;
-  $max: 60;
-    // transform: rotate(360deg);
-      border-radius: 0;
-  @for $i from 1 through $max {
-      $shadow: $shadow $i*3+rem $i*2+rem 0 $i/10 + rem rgb($i*80,$i*20,$i*50,$i) #{if($i !=$max, ',', '')};
-    
-  }
-
-  box-shadow: $shadow;
-  }
+  100% {
+    width:3vw;
+    height:3vw;
+    box-shadow: shadow()
+    }
 }
 
 
-@keyframes fade{
-  100%{
-    opacity: 1
-  }
-}
+
 
 
