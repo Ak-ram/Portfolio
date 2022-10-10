@@ -20,9 +20,12 @@ const Blog = () => {
           "Git",
         ]}
       />
-
-      <Article />
-      <Article />
+      <div className="articles-container">
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+      </div>
     </div>
   );
 };

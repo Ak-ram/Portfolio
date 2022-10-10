@@ -1,5 +1,8 @@
 .blog-page{
     color: #fff;
     padding: .5rem;
-
+    .articles-container{
+            height: 326px;
+    overflow: auto;
+    }
 }
