@@ -28,6 +28,10 @@
         gap: .5rem;
         align-items: center;
         justify-content: center;
+        a{
+    all: unset;
+    padding: 0.3rem;
+        }
     }
     span{
         padding: .3rem;
