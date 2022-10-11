@@ -10,6 +10,9 @@
     padding: 1rem;
     display: flex;
     .circle{
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: conic-gradient(#61DBFB 135deg, #F0DB4F 135deg 270deg, #0078d7 270deg);
     .circle-content{
     background: #fff;
     color: #000;
@@ -20,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-        box-shadow: 0 0 0rem 0.5rem #e84393;
+        // box-shadow: 0 0 0rem 0.5rem #e84393;
     span:nth-child(1){
         font-weight: bold;
     }
