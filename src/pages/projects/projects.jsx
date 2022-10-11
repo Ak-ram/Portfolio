@@ -8,13 +8,13 @@ import {
   SiTailwindcss,
   SiBootstrap,
   SiPostman,
+  SiAntdesign,
+  SiGithub,
 } from "react-icons/si";
 import "./projects.scss";
 const Projects = () => {
   const techs = [
-    {
-      React: <FaReact color="rgb(0 160 240)" size={25} />,
-    },
+    { React: <FaReact color="rgb(0 160 240)" size={25} /> },
     { Javscript: <SiJavascript color="yellow" size={25} /> },
     { Css3: <SiCss3 color="#4285F4" size={25} /> },
     { Sass: <FaSass color="#CD6799" size={25} /> },
@@ -22,6 +22,8 @@ const Projects = () => {
     { Tailwind: <SiTailwindcss color="#36b7f0" size={25} /> },
     { Bootstrap: <SiBootstrap color="#563d7c" size={25} /> },
     { Postman: <SiPostman color="#EF5B25" size={25} /> },
+    { GitHub: <SiGithub color="#fff" size={25} /> },
+    { AntDesign: <SiAntdesign color="#e16260" size={25} /> },
   ];
 
   return (
