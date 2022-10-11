@@ -10,6 +10,10 @@ const Projects = () => {
         <ProjectsStatsBox />
         <div className="technologyBox-container">
           <TechnologyBox />
+          <TechnologyBox />
+          <TechnologyBox />
+          <TechnologyBox />
+          <TechnologyBox />
         </div>
       </div>
     </>
