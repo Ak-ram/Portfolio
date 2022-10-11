@@ -27,14 +27,15 @@ const Blog = () => {
       <SearchBox />
       <Filters
         filters={[
-          "Js",
-          "React",
-          "Redux",
-          "React-route-dom",
-          "Scss",
-          "Css",
-          "Html",
-          "Git",
+          "all",
+          "js",
+          "react",
+          "redux",
+          "react-route-dom",
+          "scss",
+          "css",
+          "html",
+          "git",
         ]}
       />
       {console.log(devBlogs)}
