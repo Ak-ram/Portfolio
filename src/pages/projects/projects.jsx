@@ -21,6 +21,9 @@ const Projects = () => {
             <div className="bottom">
               <span className="bottom_part1">Used Space</span>
               <span className="bottom_part2">312 GB</span>
+              <span className="key"></span>
+              <span className="key"></span>
+              <span className="key"></span>
             </div>
           </div>
         </div>

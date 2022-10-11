@@ -53,6 +53,7 @@
     }
         .top,.bottom{
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -67,5 +68,19 @@
         font-size: 13px;
     }
         }
+        .bottom{
+            position: relative;
+span.key{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: -11px;
+        }
+            span.key:nth-child(1){top: 0;background: #0078d7;}
+        // span.key:nth-child(2){}
+        // span.key:nth-child(3){}
+        }
+
+        
     }
 }
