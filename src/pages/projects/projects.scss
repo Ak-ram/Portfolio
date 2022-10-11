@@ -70,15 +70,16 @@
         }
         .bottom{
             position: relative;
-span.key{
+span.key1,span.key2,span.key3{
     width: 6px;
     height: 6px;
     position: absolute;
     left: -11px;
         }
-            span.key:nth-child(1){top: 0;background: #0078d7;}
-        // span.key:nth-child(2){}
-        // span.key:nth-child(3){}
+        span.key1{top: 5px;background: #0078d7;}
+        span.key2{top: 15px;
+    background: #e84393;}
+        span.key3{top: 25px;background: #f8b334;}
         }
 
         
