@@ -1,7 +1,7 @@
 import "./App.css";
 
-import {useEffect, useState} from "react";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import NavBar from "./components/navBar/navBar";
 import WelcomeScreen from "./components/welcomeScreen/welcomeScreen";
@@ -13,7 +13,9 @@ import Projects from "./pages/projects/projects";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  useEffect(() => { setTimeout(() => setLoading(false), 3500); }, []);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3500);
+  }, []);
   let appContent = (
     <Router>
       <NavBar />
@@ -27,9 +29,7 @@ function App() {
       </Routes>
     </Router>
   );
-  return <>{loading ? <WelcomeScreen /> : appContent
-}
-< />;
+  return <>{loading ? <WelcomeScreen /> : appContent}</>;
 }
 
 export default App;
