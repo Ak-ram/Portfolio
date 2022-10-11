@@ -10,10 +10,26 @@
     border-radius: 5px;
     margin: 0.5rem 0;
     padding: 0.3rem;
-    img{
+    .img-container {
+    position: relative;
+    >{
+        img{
     border-radius: 5px;
-    min-height: 90%;
-    max-width: 40%;
+    width: 100%;
+    height: 100%;
+    }
+    .tag{
+    position: absolute;
+    left: 5px;
+    padding: .1rem .3rem;
+    background: #ffffff;
+    border-radius: 9px;
+    font-size: 13px;
+    color: #000;
+    top: 5px;
+    font-weight: bold;
+    }
+    }
     }
     .article-content{
         span.time-of-read{
@@ -31,12 +47,13 @@
         }
     
             
-            .likes, .comments{
+            .likes, .comments,.publish-date{
                 display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.3rem;
-    color: #ffffff9c
+    color: #ffffff9c;
+    font-size: 12px;
         }
         
         

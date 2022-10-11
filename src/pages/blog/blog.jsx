@@ -47,6 +47,8 @@ const Blog = () => {
             comments_count,
             positive_reactions_count,
             reading_time_minutes,
+            readable_publish_date,
+            tag_list,
           }) => (
             <Article
               key={id}
@@ -55,6 +57,8 @@ const Blog = () => {
               reactionsCount={positive_reactions_count}
               commentsCount={comments_count}
               readingTime={reading_time_minutes}
+              publishDate={readable_publish_date}
+              tagList={tag_list}
             />
           )
         )}
