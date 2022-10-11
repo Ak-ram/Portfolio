@@ -20,14 +20,6 @@ const Projects = () => {
         <section className="technologyes">
           <h3>Categories</h3>
           <div className="technologyBox-container">
-            {/* <TechnologyBox
-              techIcon={<FaReact color="rgb(0 160 240)" size={25} />}
-              techName="React"
-            />
-            <TechnologyBox
-              techIcon={<SiJavascript color="yellow" size={25} />}
-              techName="Javascript"
-            /> */}
             {techs.map((tech) => {
               return (
                 <TechnologyBox
