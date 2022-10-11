@@ -1,8 +1,15 @@
 .blog-page{
     color: #fff;
     padding: .5rem;
+        h2{
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .5rem;
+    }
     .articles-container{
             height: 326px;
     overflow: auto;
     }
+
 }
