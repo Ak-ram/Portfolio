@@ -1,7 +1,10 @@
 import React from "react";
 import "./technologyBox.scss"
-const TechnologyBox = () =>{
-    return <div>Tech</div>
+const TechnologyBox = ({techIcon,techName}) =>{
+    return <div className='tech'>
+        <span className='tech-icon'>{techIcon}</span>
+        <span className="tech-name">{techName}</span>
+    </div>
 }
 
 export default TechnologyBox
