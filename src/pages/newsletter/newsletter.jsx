@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineSend } from "react-icons/ai";
 import "./newsletter.scss";
 const Newsletter = () => {
   return (
@@ -13,6 +14,7 @@ const Newsletter = () => {
         </div>
         <div className="email-box">
           <input type={"email"} placeholder="Enter Your Email" />
+          <AiOutlineSend stroke="#fff" size={20} className="sendIcon" />
         </div>
       </div>
     </section>
