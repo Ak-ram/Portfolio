@@ -1,10 +1,9 @@
 import React from "react";
-import {FaReact} from "react-icons/fa"
 import "./technologyBox.scss"
-const TechnologyBox = () =>{
+const TechnologyBox = ({techIcon,techName}) =>{
     return <div className='tech'>
-        <FaReact />
-        <span>React</span>
+        <span className='tech-icon'>{techIcon}</span>
+        <span className="tech-name">{techName}</span>
     </div>
 }
 

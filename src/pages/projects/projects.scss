@@ -2,12 +2,16 @@
     color: #fff;
     padding: 0.5rem;
     height: calc(100vh - 70px);
+    .technologyes{
+        h3{text-align: center;}
     .technologyBox-container{
-        background: rgb(255 255 255 / 4%);
+        border: 1px solid rgb(255 255 255 / 4%);
     border-radius: 5px;
     padding: 1rem;
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
+    }
     }
 }
