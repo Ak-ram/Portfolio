@@ -19,11 +19,17 @@ const Projects = () => {
               <span className="top_part2">512 GB</span>
             </div>
             <div className="bottom">
-              <span className="bottom_part1">Used Space</span>
-              <span className="bottom_part2">312 GB</span>
-              <span className="key1"></span>
-              <span className="key2"></span>
-              <span className="key3"></span>
+              <div className="index">
+                <span className="key"></span>
+                <span className="technology">React</span>
+                <span className="projectsCount">4</span>
+              </div>
+
+              <div className="index">
+                <span className="key"></span>
+                <span className="technology">React</span>
+                <span className="projectsCount">4</span>
+              </div>
             </div>
           </div>
         </div>
