@@ -14,7 +14,8 @@
     flex-wrap: wrap;
     gap: 1rem;
     overflow: scroll;
-    height: 80%;
+    height: auto;
+    max-height: 80%;
     justify-content: center
     }
     }
