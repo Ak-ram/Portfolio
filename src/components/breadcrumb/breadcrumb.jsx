@@ -5,7 +5,7 @@ import "./breadcrumb.scss";
 const Breadcrumb = () => {
   return (
     <div className="breadcrumb-container">
-      <IoIosArrowBack className="backIcon" /> Back
+      <IoIosArrowBack className="backIcon" />
     </div>
   );
 };
