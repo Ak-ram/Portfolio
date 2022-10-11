@@ -10,6 +10,7 @@
     padding: 1rem;
     display: flex;
     .circle{
+    .circle-content{
     background: #fff;
     color: #000;
     width: 60px;
@@ -19,6 +20,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+        box-shadow: 0 0 0rem 0.5rem #e84393;
+    span:nth-child(1){
+        font-weight: bold;
     }
+    span:nth-child(2){
+            font-size: 12px;
+    font-weight: bold;
+    color: rgb(120 120 120 / 77%);
+    }
+    }}
     }
 }

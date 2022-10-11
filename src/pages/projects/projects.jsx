@@ -8,7 +8,9 @@ const Projects = () => {
         <div className="projects-stats">
           <div className="leftSide">
             <div className="circle">
-              <span>14</span> <span>Projects</span>
+              <div className="circle-content">
+                <span>14</span> <span>Projects</span>
+              </div>
             </div>
           </div>
           <div className="rightSide"></div>
