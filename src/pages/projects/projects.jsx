@@ -13,7 +13,16 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="rightSide"></div>
+          <div className="rightSide">
+            <div className="top">
+              <span className="top_part1">Total Space</span>
+              <span className="top_part2">512 GB</span>
+            </div>
+            <div className="bottom">
+              <span className="bottom_part1">Used Space</span>
+              <span className="bottom_part2">312 GB</span>
+            </div>
+          </div>
         </div>
       </div>
     </>

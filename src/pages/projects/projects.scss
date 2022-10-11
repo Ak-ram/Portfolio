@@ -3,15 +3,17 @@
     padding: 0.5rem;
     .projects-stats{
     width: 70%;
-    background: rgb(255 255 255 / 4%);
+    background: rgba(255, 255, 255, 0.04);
     margin: 0 auto;
     border-radius: 15px;
     padding: 1rem;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     .circle{
     border-radius: 50%;
     padding: 0.5rem;
-    background: conic-gradient(#61DBFB 135deg, #F0DB4F 135deg 270deg, #0078d7 270deg);
+    background: conic-gradient(#f8b334 135deg, #e84393 135deg 270deg, #0078d7 270deg);
     .circle-content{
     background: #fff;
     color: #000;
@@ -32,5 +34,22 @@
     color: rgb(120 120 120 / 77%);
     }
     }}
+    }
+    
+    
+    .rightSide{
+        .top,.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    .top_part1{
+        color: rgb(255 255 255 / 61%)
+    }
+    .top_part2{
+        font-weight: bold;
+    }
+        }
     }
 }
