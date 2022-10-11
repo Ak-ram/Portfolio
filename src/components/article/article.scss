@@ -1,6 +1,6 @@
 // @media screen and (max-width: 425px){
     article{
-
+    position: relative;
         height: 100px;
     display: flex;
     gap: 0.7rem;
@@ -9,25 +9,25 @@
     border: 1px solid rgb(0 40 60);
     border-radius: 5px;
     margin: 0.5rem 0;
-    padding: 0.3rem;
+    // padding: 0.3rem;
     .img-container {
-    position: relative;
+    max-width: 45%;
+    height: 100%;
     >{
         img{
-    border-radius: 5px;
+  border-radius: 5px 0px 0px 5px;
     width: 100%;
     height: 100%;
     }
     .tag{
     position: absolute;
-    left: 5px;
-    padding: .1rem .3rem;
-    background: #ffffff;
+    right: 5px;
+    padding: 0 0.3rem 0.1rem 0.3rem;
     border-radius: 9px;
     font-size: 13px;
-    color: #000;
+    color: rgb(255 255 255 / 61%);
     top: 5px;
-    font-weight: bold;
+    border: 1px solid rgb(110 110 110 / 36%);
     }
     }
     }
