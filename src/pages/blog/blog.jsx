@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import SearchBox from "../../components/searchBox/searchBox";
 import Filters from "../../components/filters/filters";
 import Article from "../../components/article/article";
+import Loader from "../../components/loader/loader";
 import { TbMailbox } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -15,7 +16,8 @@ const Blog = () => {
       setDevBlogs(response.data);
     });
   }, []);
-  if (!devBlogs) return "Loading...";
+  if (!devBlogs) return <Loader />;
+
   return (
     <div className="blog-page">
       <h2>
@@ -38,7 +40,6 @@ const Blog = () => {
           "git",
         ]}
       />
-      {console.log(devBlogs)}
       <div className="articles-container">
         {devBlogs?.map(
           ({
