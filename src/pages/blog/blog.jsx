@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SearchBox from "../../components/searchBox/searchBox";
 import Filters from "../../components/filters/filters";
 import Article from "../../components/article/article";
 import { TbMailbox } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import "./blog.scss";
 const Blog = () => {
+  const [devBlogs, setDevBlogs] = useState(null);
+  const baseURL = "https://dev.to/api/articles?username=ak_ram";
+
+  useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setDevBlogs(response.data);
+    });
+  }, []);
+  if (!devBlogs) return "Loading...";
   return (
     <div className="blog-page">
       <h2>
@@ -27,11 +37,27 @@ const Blog = () => {
           "Git",
         ]}
       />
+      {console.log(devBlogs)}
       <div className="articles-container">
-        <Article />
-        <Article />
-        <Article />
-        <Article />
+        {devBlogs?.map(
+          ({
+            cover_image,
+            id,
+            title,
+            comments_count,
+            positive_reactions_count,
+            reading_time_minutes,
+          }) => (
+            <Article
+              key={id}
+              coverImage={cover_image}
+              title={title}
+              reactionsCount={positive_reactions_count}
+              commentsCount={comments_count}
+              readingTime={reading_time_minutes}
+            />
+          )
+        )}
       </div>
     </div>
   );

@@ -54,8 +54,12 @@
         .sendIcon{
     position: absolute;
     top: 50%;
-    right: 0;
-    transform: translate(-50%,-50%);
+    right: -15px;
+    transform: translate(-50%, -50%);
+    background: rgb(110 110 110 / 43%);
+    padding: 0.3rem;
+    border-radius: 50%;
+    cursor: pointer;
         }
     }
     }
