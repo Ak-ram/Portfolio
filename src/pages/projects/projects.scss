@@ -1,0 +1,24 @@
+.projects-page{
+        color: #fff;
+    padding: 0.5rem;
+    .projects-stats{
+    width: 70%;
+    background: rgb(255 255 255 / 4%);
+    margin: 0 auto;
+    height: 70px;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    .circle{
+    background: #fff;
+    color: #000;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    }
+}
