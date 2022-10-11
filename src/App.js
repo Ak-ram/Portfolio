@@ -5,6 +5,7 @@ import Home from "./pages/home/home.jsx";
 import Profile from "./pages/profile/profile";
 import Projects from "./pages/projects/projects";
 import Blog from "./pages/blog/blog";
+import Newsletter from "./pages/newsletter/newsletter.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
+        <Route path="/newsletter" element={<Newsletter />}></Route>
       </Routes>
     </Router>
   );

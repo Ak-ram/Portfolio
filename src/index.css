@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #10151e;
+  color: #fff;
 }
 
 /* Remove the blue highlight of button on mobile */
@@ -31,4 +32,8 @@ input[type="search"]::-webkit-search-results-decoration {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  all: unset;
 }
