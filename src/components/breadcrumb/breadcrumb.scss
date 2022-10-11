@@ -1,7 +1,8 @@
 .breadcrumb-container{
-    width: 100%;
-    .backIcon{
-        align-self: start;
-        margin: 2rem 1rem;
-        }
+        display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 2rem;
+    width: 90%;
+
 }
