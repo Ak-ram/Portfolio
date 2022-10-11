@@ -10,6 +10,11 @@ import {
   SiPostman,
   SiAntdesign,
   SiGithub,
+  SiMaterialui,
+  SiFirebase,
+  SiGit,
+  SiWebstorm,
+  SiVisualstudio,
 } from "react-icons/si";
 import "./projects.scss";
 const Projects = () => {
@@ -24,6 +29,11 @@ const Projects = () => {
     { Postman: <SiPostman color="#EF5B25" size={25} /> },
     { GitHub: <SiGithub color="#fff" size={25} /> },
     { AntDesign: <SiAntdesign color="#e16260" size={25} /> },
+    { Materialui: <SiMaterialui color="#28b0ee" size={25} /> },
+    { Firebase: <SiFirebase color="#f7c52e" size={25} /> },
+    { Git: <SiGit color="#e94e31" size={25} /> },
+    { Webstorm: <SiWebstorm color="#fff" size={25} /> },
+    { Visualstudio: <SiVisualstudio color="#0074d0" size={25} /> },
   ];
 
   return (
