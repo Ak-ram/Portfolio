@@ -38,17 +38,33 @@
     
     
     .rightSide{
+            display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: .5rem;
+    &:before{
+    content: "";
+    height: 33px;
+    width: 5px;
+    position: absolute;
+    background: rgb(255 255 255 / 61%);
+    border-radius: 2px;
+    left: 0;
+    }
         .top,.bottom{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
-    .top_part1{
-        color: rgb(255 255 255 / 61%)
+    gap: 0.2rem;
+    margin-left: 10px;
+    .top_part1,.bottom_part1{
+        color: rgb(255 255 255 / 61%);
+            font-size: 10px;
     }
-    .top_part2{
+    .top_part2, .bottom_part2{
         font-weight: bold;
+        font-size: 12px;
     }
         }
     }
