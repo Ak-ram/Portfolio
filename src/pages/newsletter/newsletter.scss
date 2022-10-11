@@ -2,7 +2,12 @@
         display: flex;
     height: calc(100vh - 70px);
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    // justify-content: center;
+    .backIcon{
+            align-self: start;
+    margin: 2rem 1rem;
+    }
     .newsletter{
     display: flex;
     flex-direction: column;
