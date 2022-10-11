@@ -14,7 +14,7 @@ const Newsletter = () => {
         </div>
         <div className="email-box">
           <input type={"email"} placeholder="Enter Your Email" />
-          <AiOutlineSend stroke="#fff" size={20} className="sendIcon" />
+          <AiOutlineSend fill="#359dd8" size={21} className="sendIcon" />
         </div>
       </div>
     </section>
