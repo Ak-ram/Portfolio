@@ -3,7 +3,7 @@ import Loader from "../../components/loader/loader";
 import "./projectsSlider.scss";
 
 const ProjectsSlider = ({ projects }) => {
-  if (!projects) return <Loader />;
+  if (!projects?.length) return <Loader />;
 
   return (
     <div className="projects-slider">
