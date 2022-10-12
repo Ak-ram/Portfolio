@@ -13,13 +13,7 @@ export function DevBlogsContextProvider({ children }) {
     });
   }, []);
   return (
-    <blogContext.Provider
-      value={{
-        devBlogs,
-      }}
-    >
-      {children}
-    </blogContext.Provider>
+    <blogContext.Provider value={{ devBlogs }}>{children}</blogContext.Provider>
   );
 }
 

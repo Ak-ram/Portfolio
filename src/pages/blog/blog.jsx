@@ -56,7 +56,9 @@ const Blog = () => {
           "git",
         ]}
       />
-      <div className="articles-container">{devBlogs ? blogs : <Loader />}</div>
+      <div className="articles-container">
+        {devBlogs.length ? blogs : <Loader />}
+      </div>
     </div>
   );
 };
