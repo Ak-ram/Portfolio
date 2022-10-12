@@ -13,7 +13,7 @@ const Projects = () => {
           <div className="projects-slider">
             <div className="project">
               <img
-                src="https://items.epicpxls.com/uploads/photo/ced316c22c23d8215bf0ebfae3fddb22.jpg"
+                src="https://miro.medium.com/max/1400/0*HZZrSYhmFsITWBC8.jpg"
                 alt="moviideck"
               />
               <div className="project-details">
