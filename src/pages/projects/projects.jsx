@@ -1,11 +1,14 @@
 import React from "react";
 import ProjectsStatsBox from "../../components/projectsStatsBox/projectsStatsBox";
 import ProjectsSlider from "../../components/projectsSlider/projectsSlider.jsx";
+import { useGitHubRepos } from "../../contexts/GitHubAPIContext";
 import "./projects.scss";
 const Projects = () => {
+  const { gitHubRepos } = useGitHubRepos();
   return (
     <>
       <div className="projects-page">
+        {console.log(gitHubRepos)}
         <h2>Projects</h2>
         <ProjectsStatsBox />
         <section className="technologyes">
