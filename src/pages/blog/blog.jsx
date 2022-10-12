@@ -1,21 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import SearchBox from "../../components/searchBox/searchBox";
 import Filters from "../../components/filters/filters";
 import Article from "../../components/article/article";
 import Loader from "../../components/loader/loader";
+import { useDevBlogs } from "../../contexts/DEVAPIContext";
 import { TbMailbox } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import "./blog.scss";
 const Blog = () => {
-  const [devBlogs, setDevBlogs] = useState(null);
-  const baseURL = "https://dev.to/api/articles?username=ak_ram";
-
-  useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setDevBlogs(response.data);
-    });
-  }, []);
+  const { devBlogs } = useDevBlogs();
 
   let blogs = devBlogs?.map(
     ({
@@ -63,7 +56,9 @@ const Blog = () => {
           "git",
         ]}
       />
-      <div className="articles-container">{devBlogs ? blogs : <Loader />}</div>
+      <div className="articles-container">
+        {devBlogs.length ? blogs : <Loader />}
+      </div>
     </div>
   );
 };

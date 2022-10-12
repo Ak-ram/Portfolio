@@ -3,13 +3,13 @@ import Loader from "../../components/loader/loader";
 import "./projectsSlider.scss";
 
 const ProjectsSlider = ({ projects }) => {
-  if (!projects) return <Loader />;
+  if (!projects?.length) return <Loader />;
 
   return (
     <div className="projects-slider">
       {projects.map((project) => {
         return (
-          <div className="project">
+          <div key={Object.keys(project)} className="project">
             <img src={Object.values(project)} alt={Object.keys(project)} />
           </div>
         );
