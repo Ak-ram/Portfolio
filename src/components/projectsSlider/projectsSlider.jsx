@@ -12,10 +12,11 @@ const ProjectsSlider = ({ projects }) => {
   useEffect(() => {
     projectsSliderRef.current.onscroll = () => {
       let scrollAmount = projectsSliderRef.current.scrollLeft;
-      setXoffset((prev) =>
-        prev >= scrollAmount ? console.log("back") : console.log("forward")
-      );
-      // console.log(Xoffset);
+      setXoffset(scrollAmount);
+      // setOffsetStyle({
+      //   ...offsetStyle,
+      //   transform: `scale(${scrollAmount / 700})`,
+      // });
     };
   }, [Xoffset]);
   if (!projects?.length) return <Loader />;
@@ -29,8 +30,14 @@ const ProjectsSlider = ({ projects }) => {
           </div>
         );
       })}
-      <FaChevronRight className="nextArrow" />
-      <FaChevronLeft className="prevArrow" />
+      <FaChevronRight
+        className="nextArrow"
+        onClick={() => (projectsSliderRef.current.scrollLeft += 100)}
+      />
+      <FaChevronLeft
+        className="prevArrow"
+        onClick={() => (projectsSliderRef.current.scrollLeft -= 100)}
+      />
     </div>
   );
 };

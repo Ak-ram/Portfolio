@@ -12,6 +12,7 @@ body {
 /* Remove the blue highlight of button on mobile */
 * {
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 /* remove x of search input */
