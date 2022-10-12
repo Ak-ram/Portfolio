@@ -23,7 +23,7 @@ const Projects = () => {
             </div>
             <div className="project">
               <img
-                src="https://items.epicpxls.com/uploads/photo/ced316c22c23d8215bf0ebfae3fddb22.jpg"
+                src="https://i.ytimg.com/vi/eTfVcagDbPg/hqdefault.jpg"
                 alt="moviideck"
               />
               <div className="project-details">
@@ -33,7 +33,7 @@ const Projects = () => {
             </div>
             <div className="project">
               <img
-                src="https://items.epicpxls.com/uploads/photo/ced316c22c23d8215bf0ebfae3fddb22.jpg"
+                src="https://static.wixstatic.com/media/c0fd69_7aea5f068bf244d382426d164f1150b4~mv2.gif/v1/fill/w_320,h_240,q_90/c0fd69_7aea5f068bf244d382426d164f1150b4~mv2.gif"
                 alt="moviideck"
               />
               <div className="project-details">
