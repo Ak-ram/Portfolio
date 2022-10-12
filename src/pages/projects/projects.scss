@@ -8,12 +8,12 @@
 .projects-slider{
     display: flex;
     align-items: center;
-    // justify-content: center;
     overflow: scroll;
     width: 100%;
     height: 130px;
     position: relative;
     gap: 1rem;
+    background: #151b26;
        .project{
            width: 200px;
            flex-shrink: 0;
