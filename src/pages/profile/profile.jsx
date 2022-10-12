@@ -40,6 +40,7 @@ const Profile = () => {
         {techs.map((tech) => {
           return (
             <TechnologyBox
+              key={Object.keys(tech)}
               techIcon={Object.values(tech)}
               techName={Object.keys(tech)}
             />

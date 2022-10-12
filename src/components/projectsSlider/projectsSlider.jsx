@@ -9,7 +9,7 @@ const ProjectsSlider = ({ projects }) => {
     <div className="projects-slider">
       {projects.map((project) => {
         return (
-          <div className="project">
+          <div key={Object.keys(project)} className="project">
             <img src={Object.values(project)} alt={Object.keys(project)} />
           </div>
         );
