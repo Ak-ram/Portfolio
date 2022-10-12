@@ -30,10 +30,16 @@
     object-fit: cover;
     }
    }
-   .nextArrow{
+   
+   .nextArrow,.prevArrow{
      position: fixed;
-    right: 15px;
     filter: drop-shadow(2px 4px 6px rgb(0 160 240));
     color: rgb(0 160 240);
+   }
+   .nextArrow{
+    right: 15px;
+   }
+   .leftArrow{
+    left: 15px;
    }
 }
