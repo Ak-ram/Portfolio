@@ -17,7 +17,7 @@ const Blog = () => {
     });
   }, []);
 
-  let blogs = devBlogs.map(
+  let blogs = devBlogs?.map(
     ({
       cover_image,
       id,
