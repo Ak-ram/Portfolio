@@ -1,5 +1,6 @@
 import "./App.css";
 import WelcomeScreen from "./components/welcomeScreen/welcomeScreen";
+import { DevBlogsContextProvider } from "./contexts/DEVAPIContext";
 import NavBar from "./components/navBar/navBar";
 import Home from "./pages/home/home.jsx";
 import Profile from "./pages/profile/profile";
@@ -15,15 +16,17 @@ function App() {
   }, []);
   let appContent = (
     <Router>
-      <NavBar />
+      <DevBlogsContextProvider>
+        <NavBar />
 
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/projects" element={<Projects />}></Route>
-        <Route path="/blog" element={<Blog />}></Route>
-        <Route path="/profile" element={<Profile />}></Route>
-        <Route path="/newsletter" element={<Newsletter />}></Route>
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/profile" element={<Profile />}></Route>
+          <Route path="/newsletter" element={<Newsletter />}></Route>
+        </Routes>
+      </DevBlogsContextProvider>
     </Router>
   );
   return <>{loading ? <WelcomeScreen /> : appContent}</>;
