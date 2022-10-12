@@ -31,8 +31,9 @@
     }
    }
    .nextArrow{
-           position: absolute;
-    right: -83%;
-    filter: drop-shadow(2px 4px 6px black);
+     position: fixed;
+    right: 15px;
+    filter: drop-shadow(2px 4px 6px rgb(0 160 240));
+    color: rgb(0 160 240);
    }
 }

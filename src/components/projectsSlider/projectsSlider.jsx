@@ -1,6 +1,6 @@
 import React from "react";
 import Loader from "../../components/loader/loader";
-import { BsChevronRight } from "react-icons/bs";
+import { FaChevronRight } from "react-icons/fa";
 import "./projectsSlider.scss";
 
 const ProjectsSlider = ({ projects }) => {
@@ -15,7 +15,7 @@ const ProjectsSlider = ({ projects }) => {
           </div>
         );
       })}
-      <BsChevronRight className="nextArrow" />
+      <FaChevronRight className="nextArrow" />
     </div>
   );
 };
