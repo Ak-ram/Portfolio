@@ -14,6 +14,7 @@ const ProjectsStatsBox = () => {
     useVSCodeExtensionGitHubRepos(gitHubRepos);
   const reactColor = "rgb(0 160 240)";
   const jsColor = "#F0DB4F";
+  const vscColor = "#ff419d";
   return (
     <div className="projects-stats">
       <div className="leftSide">
@@ -25,9 +26,16 @@ const ProjectsStatsBox = () => {
             }deg, ${jsColor} ${
               reactProjectsArray?.length * (360 / gitHubRepos.length)
             }deg ${
-              jsGitHubReposArray?.length * (360 / gitHubRepos.length)
-            }deg, #0078d7 ${
-              jsGitHubReposArray?.length * (360 / gitHubRepos.length)
+              jsGitHubReposArray?.length * (360 / gitHubRepos.length) +
+              reactProjectsArray?.length * (360 / gitHubRepos.length)
+            }deg, ${vscColor} ${
+              jsGitHubReposArray?.length * (360 / gitHubRepos.length) +
+              reactProjectsArray?.length * (360 / gitHubRepos.length)
+            }deg ${
+              jsGitHubReposArray?.length * (360 / gitHubRepos.length) +
+              reactProjectsArray?.length * (360 / gitHubRepos.length) +
+              vscodeExtensionGitHubReposArray?.length *
+                (360 / gitHubRepos.length)
             }deg)`,
           }}
         >
@@ -61,7 +69,10 @@ const ProjectsStatsBox = () => {
           </div>
 
           <div className="index">
-            <span className="key key-3"></span>
+            <span
+              className="key key-3"
+              style={{ background: `${vscColor}` }}
+            ></span>
             <span className="technology">VS code</span>
             <span className="projectsCount">
               {vscodeExtensionGitHubReposArray.length}
