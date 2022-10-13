@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect, createContext } from "react";
 import axios from "axios";
 
-const ReposContext = createContext();
+export const ReposContext = createContext();
 
 export function GitHubReposContextProvider({ children }) {
   const [gitHubRepos, setgitHubRepos] = useState([]);
