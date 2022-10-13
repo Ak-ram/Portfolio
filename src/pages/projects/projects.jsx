@@ -1,5 +1,6 @@
 import React from "react";
 import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
+import { HiOutlineMinus } from "react-icons/hi";
 import TechnologyBox from "../../components/technologyBox/technologyBox";
 import {
   SiJavascript,
@@ -65,13 +66,28 @@ const Projects = () => {
             <img src="" className="project-name" />
             <span className="project-name"></span>
           </div> */}
-          <TechnologyBox techIcon={<SiReact />} techName={"React Projects"} />
-          <TechnologyBox techIcon={<SiJavascript />} techName={"JS Projects"} />
-          <TechnologyBox
-            techIcon={<SiVisualstudio />}
-            techName={"VS code snippet"}
-          />
-          <TechnologyBox techIcon={<SiHtml5 />} techName={"HTML/CSS"} />
+          <div className="continue-scrolling">
+            <HiOutlineMinus />
+          </div>
+          <div className="categories">
+            <TechnologyBox techIcon={<SiReact />} techName={"React Projects"} />
+            <TechnologyBox
+              techIcon={<SiJavascript />}
+              techName={"JS Projects"}
+            />
+            <TechnologyBox
+              techIcon={<SiVisualstudio />}
+              techName={"VS code snippet"}
+            />
+            <TechnologyBox
+              techIcon={
+                <>
+                  <SiHtml5 /> <SiCss3 />
+                </>
+              }
+              techName={"HTML/CSS"}
+            />
+          </div>
           {/* {gitHubRepos?.map((repo) => (
             <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
           ))} */}
