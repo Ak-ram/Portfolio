@@ -3,7 +3,7 @@
 .tech{
     flex-basis: 70px;
     background: rgb(255 255 255 / 4%);
-    height: 70px;
+    height: 60px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -11,5 +11,6 @@
     flex-direction: column;
     .tech-name{
         font-size: 13px;
+        text-align: center;
     }
 }

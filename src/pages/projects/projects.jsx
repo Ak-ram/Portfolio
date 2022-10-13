@@ -1,5 +1,6 @@
 import React from "react";
 import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
+import { MdHorizontalRule } from "react-icons/md";
 import TechnologyBox from "../../components/technologyBox/technologyBox";
 import {
   SiJavascript,
@@ -15,6 +16,7 @@ import {
   SiWebstorm,
   SiVisualstudio,
   SiReact,
+  SiHtml5,
 } from "react-icons/si";
 import ProjectsStatsBox from "../../components/projectsStatsBox/projectsStatsBox";
 import ProjectsSlider from "../../components/projectsSlider/projectsSlider.jsx";
@@ -60,13 +62,30 @@ const Projects = () => {
           />
         </section>
         <div className="projects-categories">
-          {/* <div className="project">
-            <img src="" className="project-name" />
-            <span className="project-name"></span>
-          </div> */}
-          {gitHubRepos?.map((repo) => (
-            <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
-          ))}
+          <div className="continue-scrolling">
+            <MdHorizontalRule />
+            <span style={{ fontSize: "12px" }}> continue scrolling </span>
+          </div>
+          <div className="categories">
+            <TechnologyBox
+              techIcon={<SiReact size={20} />}
+              techName={"React"}
+            />
+            <TechnologyBox
+              techIcon={<SiJavascript size={20} />}
+              techName={"JS"}
+            />
+            <TechnologyBox
+              techIcon={<SiVisualstudio size={20} />}
+              techName={"VSC"}
+            />
+            <TechnologyBox techIcon={<SiCss3 size={20} />} techName={"CSS"} />
+          </div>
+          <div className="projects-list">
+            {gitHubRepos?.map((repo) => (
+              <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
+            ))}
+          </div>
         </div>
       </div>
     </>

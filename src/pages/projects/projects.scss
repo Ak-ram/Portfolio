@@ -1,7 +1,7 @@
 .projects-page{
     color: #fff;
     padding: 0.5rem;
-    height: calc(100vh - 70px);
+    margin-bottom: 70px;
     .technologies{
         // height: calc(100% - 215px);
         margin-bottom: 1rem;
@@ -9,31 +9,35 @@
 
     }
     .projects-categories{
+           border-radius: 40px 40px 0 0;
+    background: #151b26;
+    padding: 1rem;
+        .continue-scrolling{
+                display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        }
+        .categories{
             display: flex;
             align-items: flex-end;
-    gap: .5rem;
+            gap: 0.5rem;
+            justify-content: center;
+            border-radius: 40px 40px 0 0;
+            background: #151b26;
+            padding: 1rem 0;
+            /* flex-wrap: wrap; */
+            font-size: 10px;
+        }
+        .projects-list{
+                width: 100%;
+    display: flex;
     flex-direction: column;
+    gap: 1rem;
     .tech{
-        width: 96%;
-        position: relative;
-        border-radius: 0;
-        &:before, &:after{
-             content: "";
-    position: absolute;
-        width: 10px;
-    background: #fd79a8;
-        left: 0;
-        }
-        &:before{
-    width: 1px;
-    height: 100%;
-    margin: -3%;
-        } 
-        &:after{
-    height: 10px;
-    margin: -4.5%;
-    border-radius: 5px;
-        }
+  
     }
+        }
+    
     }
 }
