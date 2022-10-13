@@ -10,7 +10,6 @@
     .circle{
     border-radius: 50%;
     padding: 0.5rem;
-    background: conic-gradient(#f8b334 135deg, #e84393 135deg 270deg, #0078d7 270deg);
     .circle-content{
     background: #fff;
     color: #000;
@@ -76,10 +75,9 @@
     .key{
             width: 6px;
     height: 6px;
-    background: rgb(0 160 240);
     }
-        .key-1{background: rgb(0 160 240)}
-        .key-2{background: #F0DB4F}
+        // .key-1{background: rgb(0 160 240)}
+        // .key-2{background: #F0DB4F}
     }
         }
 
