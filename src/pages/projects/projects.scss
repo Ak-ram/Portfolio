@@ -9,7 +9,30 @@
     }
     .projects-categories{
             display: flex;
+            align-items: flex-end;
     gap: .5rem;
     flex-direction: column;
+    .tech{
+        width: 96%;
+        position: relative;
+        border-radius: 0;
+        &:before, &:after{
+             content: "";
+    position: absolute;
+        width: 10px;
+    background: #fd79a8;
+        left: 0;
+        }
+        &:before{
+    width: 1px;
+    height: 100%;
+    margin: -3%;
+        } 
+        &:after{
+    height: 10px;
+    margin: -4.5%;
+    border-radius: 5px;
+        }
+    }
     }
 }
