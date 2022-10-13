@@ -25,13 +25,13 @@ const ProjectsStatsBox = () => {
         </div>
         <div className="bottom">
           <div className="index">
-            <span className="key"></span>
+            <span className="key key-1"></span>
             <span className="technology">React</span>
             <span className="projectsCount">{reactProjectsArray.length}</span>
           </div>
 
           <div className="index">
-            <span className="key"></span>
+            <span className="key key-2"></span>
             <span className="technology">JS</span>
             <span className="projectsCount">{jsGitHubReposArray.length}</span>
           </div>
