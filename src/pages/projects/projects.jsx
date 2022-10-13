@@ -64,9 +64,15 @@ const Projects = () => {
             <img src="" className="project-name" />
             <span className="project-name"></span>
           </div> */}
-          {gitHubRepos?.map((repo) => (
+          <TechnologyBox techIcon={<SiReact />} techName={"React Projects"} />
+          <TechnologyBox techIcon={<SiJavascript />} techName={"JS Projects"} />
+          <TechnologyBox
+            techIcon={<SiVisualstudio />}
+            techName={"VS code snippet"}
+          />
+          {/* {gitHubRepos?.map((repo) => (
             <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
-          ))}
+          ))} */}
         </div>
       </div>
     </>
