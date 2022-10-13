@@ -7,4 +7,9 @@
         h3{text-align: center;}
 
     }
+    .projects-categories{
+            display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    }
 }
