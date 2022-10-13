@@ -15,6 +15,7 @@ import {
   SiWebstorm,
   SiVisualstudio,
   SiReact,
+  SiHtml5,
 } from "react-icons/si";
 import ProjectsStatsBox from "../../components/projectsStatsBox/projectsStatsBox";
 import ProjectsSlider from "../../components/projectsSlider/projectsSlider.jsx";
@@ -70,6 +71,7 @@ const Projects = () => {
             techIcon={<SiVisualstudio />}
             techName={"VS code snippet"}
           />
+          <TechnologyBox techIcon={<SiHtml5 />} techName={"HTML/CSS"} />
           {/* {gitHubRepos?.map((repo) => (
             <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
           ))} */}

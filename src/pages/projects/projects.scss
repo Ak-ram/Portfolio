@@ -1,7 +1,7 @@
 .projects-page{
     color: #fff;
     padding: 0.5rem;
-    height: calc(100vh - 70px);
+    margin-bottom: 70px;
     .technologies{
         // height: calc(100% - 215px);
         margin-bottom: 1rem;
@@ -9,11 +9,14 @@
 
     }
     .projects-categories{
-            display: flex;
-            align-items: flex-end;
-    gap: .5rem;
-    justify-content: center;
-    // flex-direction: column;
+        display: flex;
+        align-items: flex-end;
+        gap: 0.5rem;
+        justify-content: center;
+        border-radius: 40px 40px 0 0;
+        background: #151b26;
+        padding: 2rem 0;
+        flex-wrap: wrap;
     .tech{
 
     width: 96%;
