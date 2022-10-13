@@ -1,6 +1,6 @@
 import React from "react";
 import Loader from "../../components/loader/loader";
-import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+// import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import "./projectsSlider.scss";
 import { useRef } from "react";
 
@@ -18,10 +18,10 @@ const ProjectsSlider = ({ projects }) => {
           </div>
         );
       })}
-      <FaChevronRight
+      {/* <FaChevronRight
         className="nextArrow"
         onClick={() => (projectsSliderRef.current.scrollLeft += 100)}
-      />
+      /> */}
     </div>
   );
 };
