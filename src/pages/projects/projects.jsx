@@ -1,6 +1,6 @@
 import React from "react";
 import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
-import { HiOutlineMinus } from "react-icons/hi";
+import { MdHorizontalRule } from "react-icons/md";
 import TechnologyBox from "../../components/technologyBox/technologyBox";
 import {
   SiJavascript,
@@ -67,7 +67,8 @@ const Projects = () => {
             <span className="project-name"></span>
           </div> */}
           <div className="continue-scrolling">
-            <HiOutlineMinus />
+            <MdHorizontalRule />
+            <span style={{ fontSize: "12px" }}> continue scrolling </span>
           </div>
           <div className="categories">
             <TechnologyBox techIcon={<SiReact />} techName={"React Projects"} />
