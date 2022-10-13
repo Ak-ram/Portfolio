@@ -67,10 +67,19 @@ const Projects = () => {
             <span style={{ fontSize: "12px" }}> continue scrolling </span>
           </div>
           <div className="categories">
-            <TechnologyBox techIcon={<SiReact />} techName={"React"} />
-            <TechnologyBox techIcon={<SiJavascript />} techName={"JS"} />
-            <TechnologyBox techIcon={<SiVisualstudio />} techName={"VSC"} />
-            <TechnologyBox techIcon={<SiCss3 />} techName={"CSS"} />
+            <TechnologyBox
+              techIcon={<SiReact size={20} />}
+              techName={"React"}
+            />
+            <TechnologyBox
+              techIcon={<SiJavascript size={20} />}
+              techName={"JS"}
+            />
+            <TechnologyBox
+              techIcon={<SiVisualstudio size={20} />}
+              techName={"VSC"}
+            />
+            <TechnologyBox techIcon={<SiCss3 size={20} />} techName={"CSS"} />
           </div>
           <div className="projects-list">
             {gitHubRepos?.map((repo) => (
