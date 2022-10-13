@@ -1,4 +1,21 @@
 import React from "react";
+import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
+import TechnologyBox from "../../components/technologyBox/technologyBox";
+import {
+  SiJavascript,
+  SiCss3,
+  SiTailwindcss,
+  SiBootstrap,
+  SiPostman,
+  SiAntdesign,
+  SiGithub,
+  SiMaterialui,
+  SiFirebase,
+  SiGit,
+  SiWebstorm,
+  SiVisualstudio,
+  SiReact,
+} from "react-icons/si";
 import ProjectsStatsBox from "../../components/projectsStatsBox/projectsStatsBox";
 import ProjectsSlider from "../../components/projectsSlider/projectsSlider.jsx";
 import { useGitHubRepos } from "../../contexts/GitHubAPIContext";
@@ -42,6 +59,15 @@ const Projects = () => {
             ]}
           />
         </section>
+        <div className="projects-categories">
+          {/* <div className="project">
+            <img src="" className="project-name" />
+            <span className="project-name"></span>
+          </div> */}
+          {gitHubRepos?.map((repo) => (
+            <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
+          ))}
+        </div>
       </div>
     </>
   );
