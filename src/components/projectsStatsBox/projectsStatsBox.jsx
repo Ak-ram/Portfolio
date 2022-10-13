@@ -1,10 +1,14 @@
 import React from "react";
 import "./projectsStatsBox.scss";
 import { useGitHubRepos } from "../../contexts/GitHubAPIContext";
-import { useReactGitHubRepos } from "../../contexts/sub_GitHubAPIContext";
+import {
+  useReactGitHubRepos,
+  useJSGitHubRepos,
+} from "../../contexts/sub_GitHubAPIContext";
 const ProjectsStatsBox = () => {
   const { gitHubRepos } = useGitHubRepos();
   const reactProjectsArray = useReactGitHubRepos(gitHubRepos);
+  const jsGitHubReposArray = useJSGitHubRepos(gitHubRepos);
   return (
     <div className="projects-stats">
       <div className="leftSide">
@@ -29,7 +33,7 @@ const ProjectsStatsBox = () => {
           <div className="index">
             <span className="key"></span>
             <span className="technology">JS</span>
-            <span className="projectsCount">4</span>
+            <span className="projectsCount">{jsGitHubReposArray.length}</span>
           </div>
         </div>
       </div>
