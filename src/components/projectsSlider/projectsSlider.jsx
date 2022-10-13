@@ -3,21 +3,10 @@ import Loader from "../../components/loader/loader";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import "./projectsSlider.scss";
 import { useRef } from "react";
-import { useEffect } from "react";
-import { useState } from "react";
 
 const ProjectsSlider = ({ projects }) => {
   const projectsSliderRef = useRef();
-  const [Xoffset, setXoffset] = useState(0);
-  useEffect(() => {
-    projectsSliderRef.current.onscroll = () => {
-      let scrollAmount = projectsSliderRef.current.scrollLeft;
-      setXoffset((prev) =>
-        prev >= scrollAmount ? console.log("back") : console.log("forward")
-      );
-      // console.log(Xoffset);
-    };
-  }, [Xoffset]);
+
   if (!projects?.length) return <Loader />;
 
   return (
@@ -29,8 +18,10 @@ const ProjectsSlider = ({ projects }) => {
           </div>
         );
       })}
-      <FaChevronRight className="nextArrow" />
-      <FaChevronLeft className="prevArrow" />
+      <FaChevronRight
+        className="nextArrow"
+        onClick={() => (projectsSliderRef.current.scrollLeft += 100)}
+      />
     </div>
   );
 };
