@@ -62,10 +62,6 @@ const Projects = () => {
           />
         </section>
         <div className="projects-categories">
-          {/* <div className="project">
-            <img src="" className="project-name" />
-            <span className="project-name"></span>
-          </div> */}
           <div className="continue-scrolling">
             <MdHorizontalRule />
             <span style={{ fontSize: "12px" }}> continue scrolling </span>
@@ -89,9 +85,11 @@ const Projects = () => {
               techName={"HTML/CSS"}
             />
           </div>
-          {/* {gitHubRepos?.map((repo) => (
-            <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
-          ))} */}
+          <div className="projects-list">
+            {gitHubRepos?.map((repo) => (
+              <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
+            ))}
+          </div>
         </div>
       </div>
     </>
