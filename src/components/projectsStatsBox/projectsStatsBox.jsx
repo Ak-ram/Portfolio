@@ -51,10 +51,10 @@ const ProjectsStatsBox = () => {
         </div>
       </div>
       <div className="rightSide">
-        <div className="top">
+        {/* <div className="top">
           <span className="top_part1">Latest Project</span>
           <span className="top_part2">Portfolio</span>
-        </div>
+        </div> */}
         <div className="bottom">
           <div className="index">
             <span
