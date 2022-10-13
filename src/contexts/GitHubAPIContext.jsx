@@ -9,7 +9,12 @@ export function GitHubReposContextProvider({ children }) {
   useEffect(() => {
     axios.get(baseUrl).then((res) => {
       const myRepos = res.data;
-      setgitHubRepos(myRepos);
+      const filteredRepos = myRepos?.filter((repo) => {
+        // if (!repo.private) return;
+        if (!repo.topics.length) return;
+        return repo;
+      });
+      setgitHubRepos(filteredRepos);
     });
   }, []);
   return (

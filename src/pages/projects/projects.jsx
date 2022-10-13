@@ -28,7 +28,7 @@ const Projects = () => {
         {console.log(gitHubRepos)}
         <h2>Projects</h2>
         <ProjectsStatsBox />
-        <section className="technologyes">
+        <section className="technologies">
           <h3>Projects List</h3>
           <ProjectsSlider
             projects={[
