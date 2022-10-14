@@ -18,7 +18,6 @@ const ProjectCard = ({ topics, createdDate, githubUrl, homepage, name }) => {
               <a href={githubUrl}>
                 <SiGithub size={16} />
               </a>
-
               {homepage ? (
                 <a href={homepage}>
                   <GoLinkExternal size={16} />

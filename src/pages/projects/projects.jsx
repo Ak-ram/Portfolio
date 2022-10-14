@@ -19,6 +19,7 @@ import {
   SiReact,
   SiHtml5,
 } from "react-icons/si";
+import { IoIosArrowForward } from "react-icons/io";
 import { BsArrowRightShort } from "react-icons/bs";
 import ProjectsStatsBox from "../../components/projectsStatsBox/projectsStatsBox";
 import ProjectsSlider from "../../components/projectsSlider/projectsSlider.jsx";
@@ -47,7 +48,6 @@ const Projects = () => {
             <MdHorizontalRule />
             <span style={{ fontSize: "12px" }}> continue scrolling </span>
           </div>
-
           <div className="categories">
             <BsArrowRightShort size={20} className="scroll-arrow" />
             <TechnologyBox
@@ -70,6 +70,9 @@ const Projects = () => {
               techIcon={<SiCss3 color="rgb(56 167 229)" size={20} />}
               techName={"CSS"}
             />
+          </div>
+          <div className="result">
+            Result : <span>{gitHubRepos.length} Projects</span>
           </div>
           <div className="projects-list">
             {gitHubRepos?.map(
