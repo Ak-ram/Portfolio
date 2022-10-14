@@ -4,7 +4,7 @@
     margin-bottom: 70px;
     .technologies{
         // height: calc(100% - 215px);
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         h3{text-align: center;}
 
     }
@@ -19,16 +19,14 @@
     justify-content: center;
         }
         .categories{
-            display: flex;
-            align-items: flex-end;
-            gap: 0.5rem;
-            justify-content: center;
-            border-radius: 40px 40px 0 0;
-            background: #151b26;
-            padding: 1rem 0;
-            /* flex-wrap: wrap; */
-            font-size: 10px;
-        }
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    font-size: 10px;
+    overflow: scroll;
+    // position: sticky;
+    // top: 0rem;
+    margin: 1rem 0;         }
         .projects-list{
                 width: 100%;
     display: flex;

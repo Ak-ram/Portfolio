@@ -14,7 +14,7 @@ const ProjectsSlider = ({ projects }) => {
       {projects.map((project) => {
         return (
           <div key={Object.keys(project)} className="project">
-            <img src={Object.values(project)} alt={Object.keys(project)} />
+            <img src={project} alt='sm' />
           </div>
         );
       })}

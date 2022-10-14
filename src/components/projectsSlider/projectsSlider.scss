@@ -1,15 +1,14 @@
 .projects-slider{
     display: flex;
     align-items: center;
-    overflow: scroll;
-    width: 100%;
-    height: 100px;
+    overflow: scroll hidden;
+    height: 120px;
     position: relative;
     gap: 1rem;
        .project{
-           width: 170px;
+           width: 200px;
            flex-shrink: 0;
-    height: 90%;
+    height: 100%;
 //     background: conic-gradient(
 //     hsl(360, 100%, 50%),
 //     hsl(315, 100%, 50%),

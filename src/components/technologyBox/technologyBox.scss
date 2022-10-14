@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-shrink: 0;
     .tech-name{
         font-size: 13px;
         text-align: center;
