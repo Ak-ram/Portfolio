@@ -11,11 +11,11 @@ const ProjectCard = ({
 }) => {
   return (
     <>
-      <div className="project-card">
+      <div className="projectCard">
         <div className="top">{icon}</div>
         <div className="bottom">
-          <span className="createdDate">{createdDate}</span>
-          <span className="techName">{name}</span>
+          <span className="createdDate">{createdDate.substr(0, 10)}</span>
+          <span className="projectName">{name}</span>
           <p className="description">{description}</p>
           <span>{topics[0]}</span>
           <a href={githubUrl}>

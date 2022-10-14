@@ -1,4 +1,4 @@
-.project-card{
+.projectCard{
     background: rgb(255 255 255 / 4%);
     width: 48%;
     border-radius: 10px;
@@ -13,5 +13,12 @@
     display: flex;
     flex-direction: column;
     padding: .3rem;
+    .createdDate{
+        font-size: 10px;
+    }
+    .projectName{
+            font-size: 12px;
+    font-weight: bold;
+    }
     }
 }
