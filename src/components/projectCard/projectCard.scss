@@ -1,0 +1,47 @@
+.projectCard{
+    background: rgba(255, 255, 255, 0.04);
+    position: relative;
+    width: 48%;
+    border-radius: 10px;
+    height: 150px;
+    overflow: hidden;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtk570HKSLfdmQRKnVqujHuI63zpyZDnnCJg&usqp=CAU");
+    background-size: contain;
+    /* box-shadow: inset 0px -5rem 1rem rgba(21, 27, 38, 0.9411764706); */
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    .details{
+    position: absolute;
+    height: 31%;
+    bottom: 0;
+    display: flex;
+    width: -webkit-fill-available;
+    flex-direction: column;
+    padding: 0.5rem;
+    justify-content: space-between;
+    box-shadow: inset 0 2rem 6rem 0rem rgba(21, 27, 38, 0.831372549);
+    // width: 100%;
+    .createdDate{
+        font-size: 10px;
+        color: rgb(0 160 240);
+    }
+    .projectName{
+            font-size: 12px;
+    font-weight: bold;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        > span.projectTopics {
+            color: #e056fd;
+        }
+    }
+    }
+}
+
+  @media screen and (max-width:350px){
+        .projectCard{
+            width: 90%;
+        }
+    }

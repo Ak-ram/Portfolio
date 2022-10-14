@@ -2,6 +2,7 @@ import React from "react";
 import { FaReact, FaSass, FaHtml5, FaArrowRight } from "react-icons/fa";
 import { MdHorizontalRule, MdDoneAll } from "react-icons/md";
 import TechnologyBox from "../../components/technologyBox/technologyBox";
+import ProjectCard from "../../components/projectCard/projectCard";
 import {
   SiJavascript,
   SiCss3,
@@ -72,7 +73,14 @@ const Projects = () => {
           </div>
           <div className="projects-list">
             {gitHubRepos?.map((repo) => (
-              <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
+              <ProjectCard
+                topics={repo.topics}
+                createdDate={repo.pushed_at}
+                githubUrl={repo.clone_url}
+                icon={""}
+                name={repo.name}
+                description={repo.description}
+              />
             ))}
           </div>
         </div>
