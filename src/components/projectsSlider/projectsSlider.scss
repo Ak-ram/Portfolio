@@ -1,8 +1,7 @@
 .projects-slider{
     display: flex;
     align-items: center;
-    overflow: scroll;
-    // width: 100%;
+    overflow: scroll hidden;
     height: 120px;
     position: relative;
     gap: 1rem;
