@@ -1,5 +1,5 @@
 import React from "react";
-import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
+import { FaReact, FaSass, FaHtml5, FaArrowRight } from "react-icons/fa";
 import { MdHorizontalRule, MdDoneAll } from "react-icons/md";
 import TechnologyBox from "../../components/technologyBox/technologyBox";
 import {
@@ -18,6 +18,7 @@ import {
   SiReact,
   SiHtml5,
 } from "react-icons/si";
+import { BsArrowRightShort } from "react-icons/bs";
 import ProjectsStatsBox from "../../components/projectsStatsBox/projectsStatsBox";
 import ProjectsSlider from "../../components/projectsSlider/projectsSlider.jsx";
 import { useGitHubRepos } from "../../contexts/GitHubAPIContext";
@@ -66,24 +67,29 @@ const Projects = () => {
             <MdHorizontalRule />
             <span style={{ fontSize: "12px" }}> continue scrolling </span>
           </div>
+
           <div className="categories">
+            <BsArrowRightShort size={20} className="scroll-arrow" />
             <TechnologyBox
-              techIcon={<MdDoneAll size={20} />}
+              techIcon={<MdDoneAll color="#e84393" size={20} />}
               techName={"All"}
             />
             <TechnologyBox
-              techIcon={<SiReact size={20} />}
+              techIcon={<SiReact color="#74b9ff" size={20} />}
               techName={"React"}
             />
             <TechnologyBox
-              techIcon={<SiJavascript size={20} />}
+              techIcon={<SiJavascript color="#fdcb6e" size={20} />}
               techName={"JS"}
             />
             <TechnologyBox
-              techIcon={<SiVisualstudio size={20} />}
+              techIcon={<SiVisualstudio color="rgb(56 167 229)" size={20} />}
               techName={"VSC"}
             />
-            <TechnologyBox techIcon={<SiCss3 size={20} />} techName={"CSS"} />
+            <TechnologyBox
+              techIcon={<SiCss3 color="rgb(56 167 229)" size={20} />}
+              techName={"CSS"}
+            />
           </div>
           <div className="projects-list">
             {gitHubRepos?.map((repo) => (
