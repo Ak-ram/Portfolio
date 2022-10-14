@@ -19,6 +19,7 @@ import {
   SiReact,
   SiHtml5,
 } from "react-icons/si";
+import { IoIosArrowForward } from "react-icons/io";
 import { BsArrowRightShort } from "react-icons/bs";
 import ProjectsStatsBox from "../../components/projectsStatsBox/projectsStatsBox";
 import ProjectsSlider from "../../components/projectsSlider/projectsSlider.jsx";
@@ -47,7 +48,6 @@ const Projects = () => {
             <MdHorizontalRule />
             <span style={{ fontSize: "12px" }}> continue scrolling </span>
           </div>
-
           <div className="categories">
             <BsArrowRightShort size={20} className="scroll-arrow" />
             <TechnologyBox
@@ -71,17 +71,30 @@ const Projects = () => {
               techName={"CSS"}
             />
           </div>
+          <div className="result">
+            Result : <span>{gitHubRepos.length} Projects</span>
+          </div>
           <div className="projects-list">
-            {gitHubRepos?.map((repo) => (
-              <ProjectCard
-                topics={repo.topics}
-                createdDate={repo.pushed_at}
-                githubUrl={repo.clone_url}
-                icon={""}
-                name={repo.name}
-                description={repo.description}
-              />
-            ))}
+            {gitHubRepos?.map(
+              ({
+                topics,
+                pushed_at,
+                clone_url,
+                name,
+                description,
+                homepage,
+              }) => (
+                <ProjectCard
+                  topics={topics}
+                  createdDate={pushed_at}
+                  githubUrl={clone_url}
+                  icon={""}
+                  name={name}
+                  description={description}
+                  homepage={homepage}
+                />
+              )
+            )}
           </div>
         </div>
       </div>

@@ -5,20 +5,20 @@
     border-radius: 10px;
     height: 150px;
     overflow: hidden;
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtk570HKSLfdmQRKnVqujHuI63zpyZDnnCJg&usqp=CAU");
+    background: url("https://www.freecodecamp.org/news/content/images/2021/10/github-on-the-hunt-for-a-new-diversity-lead-developers-techworld-github-universe-png-800_450.png");
     background-size: contain;
-    /* box-shadow: inset 0px -5rem 1rem rgba(21, 27, 38, 0.9411764706); */
+    box-shadow: inset 0px -4rem 0rem #151b26a3;
     border: 1px solid rgba(255, 255, 255, 0.04);
     .details{
     position: absolute;
-    height: 31%;
+    height: 35%;
     bottom: 0;
     display: flex;
     width: -webkit-fill-available;
     flex-direction: column;
     padding: 0.5rem;
     justify-content: space-between;
-    box-shadow: inset 0 2rem 6rem 0rem rgba(21, 27, 38, 0.831372549);
+    // box-shadow: inset 0 2rem 6rem 0rem rgba(21, 27, 38, 0.831372549);
     // width: 100%;
     .createdDate{
         font-size: 10px;
@@ -30,11 +30,21 @@
     }
     footer{
         display: flex;
-        align-items: center;
+        // align-items: center;
         justify-content: space-between;
         font-size: 12px;
         > span.projectTopics {
-            color: #e056fd;
+                color: #e056fd;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 70%;
+        }
+        .external-links{
+                display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
         }
     }
     }
