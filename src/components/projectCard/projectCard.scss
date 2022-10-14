@@ -1,7 +1,7 @@
 .projectCard{
     background: rgba(255, 255, 255, 0.04);
     position: relative;
-    width: 90%;
+    width: 48%;
     border-radius: 10px;
     height: 150px;
     overflow: hidden;
@@ -9,12 +9,6 @@
     background-size: contain;
     /* box-shadow: inset 0px -5rem 1rem rgba(21, 27, 38, 0.9411764706); */
     border: 1px solid rgba(255, 255, 255, 0.04);
-    
-    // .top{
-    //         height: 60%;
-    // background: #fd79a8;
-    // border-radius: 10px 10px 0 0;
-    // }
     .details{
     position: absolute;
     height: 31%;
@@ -45,3 +39,9 @@
     }
     }
 }
+
+  @media screen and (max-width:350px){
+        .projectCard{
+            width: 90%;
+        }
+    }
