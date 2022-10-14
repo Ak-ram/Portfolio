@@ -72,7 +72,14 @@ const Projects = () => {
           </div>
           <div className="projects-list">
             {gitHubRepos?.map((repo) => (
-              <TechnologyBox techIcon={<SiReact />} techName={repo.name} />
+              <TechnologyBox
+                topics={repo.topics}
+                createdDate={repo.pushed_at}
+                githubUrl={repo.clone_url}
+                size={repo.size}
+                techIcon={""}
+                techName={repo.name}
+              />
             ))}
           </div>
         </div>
