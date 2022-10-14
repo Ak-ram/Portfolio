@@ -1,6 +1,6 @@
 import React from "react";
-import "./projectCard.scss";
 import { GoLinkExternal } from "react-icons/go";
+import "./projectCard.scss";
 const ProjectCard = ({
   topics,
   createdDate,

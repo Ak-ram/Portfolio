@@ -1,15 +1,17 @@
-.projectCard{
+.project-card{
     background: rgb(255 255 255 / 4%);
-    max-width: 48%;
+    width: 48%;
     border-radius: 10px;
     height: 130px;
+    overflow: hidden;
     .top{
             height: 60%;
     background: #fd79a8;
     border-radius: 10px 10px 0 0;
     }
     .bottom{
-            display: flex;
+    display: flex;
     flex-direction: column;
+    padding: .3rem;
     }
 }
