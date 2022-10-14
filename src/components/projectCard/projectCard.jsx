@@ -1,5 +1,6 @@
 import React from "react";
-
+import "./projectCard.scss";
+import { GoLinkExternal } from "react-icons/go";
 const ProjectCard = ({
   topics,
   createdDate,
@@ -16,12 +17,10 @@ const ProjectCard = ({
           <span className="createdDate">{createdDate}</span>
           <span className="techName">{name}</span>
           <p className="description">{description}</p>
-          <div className="topics">
-            {topics?.map((topic) => (
-              <span>{topic}</span>
-            ))}
-          </div>
-          <a href={githubUrl}>Live Demo</a>
+          <span>{topics[0]}</span>
+          <a href={githubUrl}>
+            <GoLinkExternal />
+          </a>
         </div>
       </div>
     </>
