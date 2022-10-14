@@ -5,14 +5,16 @@ const ProjectCard = ({ topics, createdDate, githubUrl, icon, name }) => {
   return (
     <>
       <div className="projectCard">
-        <div className="top">{icon}</div>
-        <div className="bottom">
+        {/* <div className="top">{icon}</div> */}
+        <div className="details">
           <span className="createdDate">{createdDate.substr(0, 10)}</span>
           <span className="projectName">{name}</span>
-          <span>{topics[0]}</span>
-          <a href={githubUrl}>
-            <GoLinkExternal />
-          </a>
+          <footer>
+            <span>{topics[0]}</span>
+            <a href={githubUrl}>
+              <GoLinkExternal />
+            </a>
+          </footer>
         </div>
       </div>
     </>
