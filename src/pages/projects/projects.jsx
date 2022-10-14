@@ -1,6 +1,6 @@
 import React from "react";
 import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
-import { MdHorizontalRule } from "react-icons/md";
+import { MdHorizontalRule, MdDoneAll } from "react-icons/md";
 import TechnologyBox from "../../components/technologyBox/technologyBox";
 import {
   SiJavascript,
@@ -31,7 +31,7 @@ const Projects = () => {
         <h2>Projects</h2>
         <ProjectsStatsBox />
         <section className="technologies">
-          <h3>Projects List</h3>
+          <h3>Top Projects</h3>
           <ProjectsSlider
             projects={[
               {
@@ -67,6 +67,10 @@ const Projects = () => {
             <span style={{ fontSize: "12px" }}> continue scrolling </span>
           </div>
           <div className="categories">
+            <TechnologyBox
+              techIcon={<MdDoneAll size={20} />}
+              techName={"All"}
+            />
             <TechnologyBox
               techIcon={<SiReact size={20} />}
               techName={"React"}
