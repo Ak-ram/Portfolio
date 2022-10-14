@@ -8,7 +8,7 @@ const ProjectCard = ({ topics, createdDate, githubUrl, icon, name }) => {
         {/* <div className="top">{icon}</div> */}
         <div className="details">
           <span className="createdDate">{createdDate.substr(0, 10)}</span>
-          <span className="projectName">{name}</span>
+          <span className="projectName">{name.replaceAll("-", " ").toUpperCase()}</span>
           <footer>
             <span className="projectTopics">{topics[0]}</span>
             <a href={githubUrl}>
