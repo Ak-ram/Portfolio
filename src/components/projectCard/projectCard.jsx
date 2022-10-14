@@ -1,5 +1,6 @@
 import React from "react";
 import { GoLinkExternal } from "react-icons/go";
+import { SiGithub } from "react-icons/si";
 import "./projectCard.scss";
 const ProjectCard = ({ topics, createdDate, githubUrl, icon, name }) => {
   return (
@@ -13,9 +14,14 @@ const ProjectCard = ({ topics, createdDate, githubUrl, icon, name }) => {
             <span className="projectTopics">
               {topics[0]} {topics[1]} {topics[2]}
             </span>
-            <a href={githubUrl}>
-              <GoLinkExternal />
-            </a>
+            <div className="external-links">
+              <a href={githubUrl}>
+                <SiGithub size={16} />
+              </a>
+              <a href={githubUrl}>
+                <GoLinkExternal size={16} />
+              </a>
+            </div>
           </footer>
         </div>
       </div>
