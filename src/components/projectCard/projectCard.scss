@@ -34,7 +34,11 @@
         justify-content: space-between;
         font-size: 12px;
         > span.projectTopics {
-            color: #e056fd;
+                color: #e056fd;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 75%;
         }
     }
     }

@@ -10,7 +10,9 @@ const ProjectCard = ({ topics, createdDate, githubUrl, icon, name }) => {
           <span className="createdDate">{createdDate.substr(0, 10)}</span>
           <span className="projectName">{name.replaceAll("-", " ")}</span>
           <footer>
-            <span className="projectTopics">{topics[0]}</span>
+            <span className="projectTopics">
+              {topics[0]} {topics[1]} {topics[2]}
+            </span>
             <a href={githubUrl}>
               <GoLinkExternal />
             </a>
