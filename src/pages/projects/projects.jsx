@@ -1,30 +1,14 @@
 import React from "react";
-import { FaReact, FaSass, FaHtml5, FaArrowRight } from "react-icons/fa";
 import { MdHorizontalRule, MdDoneAll } from "react-icons/md";
 import TechnologyBox from "../../components/technologyBox/technologyBox";
 import ProjectCard from "../../components/projectCard/projectCard";
-import {
-  SiJavascript,
-  SiCss3,
-  SiTailwindcss,
-  SiBootstrap,
-  SiPostman,
-  SiAntdesign,
-  SiGithub,
-  SiMaterialui,
-  SiFirebase,
-  SiGit,
-  SiWebstorm,
-  SiVisualstudio,
-  SiReact,
-  SiHtml5,
-} from "react-icons/si";
-import { IoIosArrowForward } from "react-icons/io";
+import { SiJavascript, SiCss3, SiVisualstudio, SiReact } from "react-icons/si";
 import { BsArrowRightShort } from "react-icons/bs";
 import ProjectsStatsBox from "../../components/projectsStatsBox/projectsStatsBox";
 import ProjectsSlider from "../../components/projectsSlider/projectsSlider.jsx";
 import { useGitHubRepos } from "../../contexts/GitHubAPIContext";
 import "./projects.scss";
+import Loader from "../../components/loader/loader";
 const Projects = () => {
   const { gitHubRepos } = useGitHubRepos();
   return (
@@ -75,25 +59,29 @@ const Projects = () => {
             Result : <span>{gitHubRepos.length} Projects</span>
           </div>
           <div className="projects-list">
-            {gitHubRepos?.map(
-              ({
-                topics,
-                pushed_at,
-                clone_url,
-                name,
-                description,
-                homepage,
-              }) => (
-                <ProjectCard
-                  topics={topics}
-                  createdDate={pushed_at}
-                  githubUrl={clone_url}
-                  icon={""}
-                  name={name}
-                  description={description}
-                  homepage={homepage}
-                />
+            {gitHubRepos.length ? (
+              gitHubRepos.map(
+                ({
+                  topics,
+                  pushed_at,
+                  clone_url,
+                  name,
+                  description,
+                  homepage,
+                }) => (
+                  <ProjectCard
+                    topics={topics}
+                    createdDate={pushed_at}
+                    githubUrl={clone_url}
+                    icon={""}
+                    name={name}
+                    description={description}
+                    homepage={homepage}
+                  />
+                )
               )
+            ) : (
+              <Loader />
             )}
           </div>
         </div>
