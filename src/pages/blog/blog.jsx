@@ -36,26 +36,28 @@ const Blog = () => {
 
   return (
     <div className="blog-page">
-      <h2>
-        Blogs{" "}
-        <Link to={"/newsletter"}>
-          <TbMailbox />
-        </Link>
-      </h2>
-      <SearchBox />
-      <Filters
-        filters={[
-          "all",
-          "js",
-          "react",
-          "redux",
-          "react-route-dom",
-          "scss",
-          "css",
-          "html",
-          "git",
-        ]}
-      />
+      <header>
+        <h2>
+          Blogs{" "}
+          <Link to={"/newsletter"}>
+            <TbMailbox />
+          </Link>
+        </h2>
+        <SearchBox />
+        <Filters
+          filters={[
+            "all",
+            "js",
+            "react",
+            "redux",
+            "react-route-dom",
+            "scss",
+            "css",
+            "html",
+            "git",
+          ]}
+        />
+      </header>
       <div className="articles-container">
         {devBlogs.length ? blogs : <Loader />}
       </div>
