@@ -46,6 +46,11 @@ const Profile = () => {
           src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
           alt="profile-img"
         />
+        <div className="user-info">
+          <strong className="user-name">Akram A. Abdelbasir</strong>
+          <strong className="user-location">Beni Suef, Egypt.</strong>
+          <strong className="user-title">Front End Developer</strong>
+        </div>
       </div>
       {/* <div className="banner"></div>
       <header className="profile-info">
