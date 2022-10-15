@@ -1,11 +1,13 @@
-import React from "react";
+// import React from "react";
 import "./projectsStatsBox.scss";
-import { useGitHubRepos } from "../../contexts/GitHubAPIContext";
+// import { useGitHubRepos } from "../../contexts/GitHubAPIContext";
 import {
   useReactGitHubRepos,
   useJSGitHubRepos,
   useVSCodeExtensionGitHubRepos,
-} from "../../contexts/sub_GitHubAPIContext";
+  useGitHubRepos,
+} from "../../exporter";
+
 const ProjectsStatsBox = () => {
   const { gitHubRepos } = useGitHubRepos();
   const reactProjectsArray = useReactGitHubRepos(gitHubRepos);

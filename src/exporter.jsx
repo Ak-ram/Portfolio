@@ -12,7 +12,13 @@ export { default as TechnologyBox } from "./components/technologyBox/technologyB
 export { default as WelcomeScreen } from "./components/welcomeScreen/welcomeScreen";
 
 // contexts
-
+export { useGitHubRepos } from "./contexts/GitHubAPIContext";
+export { useDevBlogs } from "./contexts/DEVAPIContext";
+export {
+  useReactGitHubRepos,
+  useJSGitHubRepos,
+  useVSCodeExtensionGitHubRepos,
+} from "./contexts/sub_GitHubAPIContext";
 // pages
 
 // icons
