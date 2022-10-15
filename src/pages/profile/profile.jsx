@@ -48,8 +48,8 @@ const Profile = () => {
         />
         <div className="user-info">
           <strong className="user-name">Akram A. Abdelbasir</strong>
-          <strong className="user-location">Beni Suef, Egypt.</strong>
-          <strong className="user-title">Front End Developer</strong>
+          <span className="user-location">Beni Suef, Egypt.</span>
+          <span className="user-title">Front End Developer</span>
         </div>
       </div>
       {/* <div className="banner"></div>

@@ -15,10 +15,24 @@
     background: rgba(255, 255, 255, 0.04);
     position: absolute;
     top: 65%;
+    width: -webkit-fill-available;
     left: 0;
     border-radius: 50px 50px 0 0;
     margin: -30px 0;
     padding: 0 1rem 1rem;
+    height: 100vh;
+    .user-info{
+          display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    transform: translateY(-20px);
+    strong.user-name{
+      font-size: 18px;
+    }
+    span.user-location{}
+    span.user-title{}
+    }
     .profile-img{
     width: 70px;
     height: 70px;
