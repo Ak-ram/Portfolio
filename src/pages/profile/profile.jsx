@@ -59,11 +59,11 @@ const Profile = () => {
           <span className="linkedin">
             <SiLinkedin /> LinkedIn
           </span>
-          <span className="github">
-            <SiGithub /> GitHub
-          </span>
           <span className="dev">
             <SiDevdotto /> DEV
+          </span>
+          <span className="github">
+            <SiGithub /> GitHub
           </span>
         </div>
       </div>
