@@ -15,6 +15,7 @@ import {
   SiWebstorm,
   SiVisualstudio,
 } from "react-icons/si";
+import "./profile.scss";
 const Profile = () => {
   const techs = [
     { React: <FaReact color="rgb(0 160 240)" size={25} /> },
@@ -34,10 +35,10 @@ const Profile = () => {
     { Visualstudio: <SiVisualstudio color="#0074d0" size={25} /> },
   ];
   return (
-    <>
+    <div className="profile-page">
       <h1>Profile </h1>
       <div className="technology-container">
-        {techs.map((tech) => {
+        {/* {techs.map((tech) => {
           return (
             <TechnologyBox
               key={Object.keys(tech)}
@@ -45,9 +46,9 @@ const Profile = () => {
               techName={Object.keys(tech)}
             />
           );
-        })}
+        })} */}
       </div>
-    </>
+    </div>
   );
 };
 
