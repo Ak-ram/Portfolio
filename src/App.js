@@ -1,13 +1,3 @@
-// import WelcomeScreen from "./components/welcomeScreen/welcomeScreen";
-// import { DevBlogsContextProvider } from "./contexts/DEVAPIContext";
-// import { GitHubReposContextProvider } from "./contexts/GitHubAPIContext";
-// import NavBar from "./components/navBar/navBar";
-// import Home from "./pages/home/home.jsx";
-// import Profile from "./pages/profile/profile";
-// import Projects from "./pages/projects/projects";
-// import Blog from "./pages/blog/blog";
-// import Newsletter from "./pages/newsletter/newsletter.jsx";
-
 import {
   WelcomeScreen,
   DevBlogsContextProvider,
