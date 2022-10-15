@@ -28,3 +28,28 @@ export { default as ImHome } from "react-icons/im";
 import { GoLinkExternal } from "react-icons/go";
 import { SiGithub } from "react-icons/si";
 import { FiSearch } from "react-icons/fi";
+import { TbMailbox } from "react-icons/tb";
+import { AiOutlineSend } from "react-icons/ai";
+import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiCss3,
+  SiTailwindcss,
+  SiBootstrap,
+  SiPostman,
+  SiAntdesign,
+  SiGithub,
+  SiMaterialui,
+  SiFirebase,
+  SiGit,
+  SiWebstorm,
+  SiVisualstudio,
+  SiLinkedin,
+  SiDevdotto,
+} from "react-icons/si";
+
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { SiJavascript, SiCss3, SiVisualstudio, SiReact } from "react-icons/si";
+import { MdHorizontalRule, MdDoneAll } from "react-icons/md";
+import { BsArrowRightShort } from "react-icons/bs";
+
