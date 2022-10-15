@@ -2,39 +2,79 @@
       color: #fff;
     padding: 0.5rem;
     margin-bottom: 70px;
+    .banner{
+    height: calc((100vh - 70px) / 1.5);
+    width: 100%;
+    background: url("https://avatars.githubusercontent.com/u/69124951?v=4");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 40%;
+    }
     .profile-info{
+    background: rgba(255, 255, 255, 0.04);
+    position: absolute;
+    top: 65%;
+    width: -webkit-fill-available;
+    left: 0;
+    border-radius: 50px 50px 0 0;
+    margin: -30px 0;
+    padding: 0 1rem 1rem;
+    height: 100vh;
+    .user-info{
     display: flex;
-    gap: 1rem;
-    /* align-items: center; */
-    justify-content: space-between;
     flex-direction: column;
-    margin-block: 1rem;
-      .top{ 
-            display: flex;
-    align-items: center;
-    justify-content: space-between;
-        padding-inline: .5rem;
-        > img{
-            width: 50px;
-    height: 50px;
+    text-align: center;
+    gap: 0.2rem;
+    margin-top: 3rem;
+    strong.user-name{
+      font-size: 18px;
+    }
+    // span.user-location{
+    // font-size: 13px;
+    // color: #fd79a8;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 0.2rem;
+    // }
+    span.user-title{
+      font-size: 12px;
+      color: #fd79a8;
+    }
+    }
+    .profile-img{
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-      }
-      .contact-me{
-            display: flex;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+
+    }
+    }
+    .socials{
+          display: flex;
     align-items: center;
     gap: 1rem;
-    .follow-me{
-          all: unset;
-    background: rgb(0 160 240);
-    padding: .3rem .5rem;
+    justify-content: center;
+    margin-block: 1rem;
+      span{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.3rem .7rem;
+    font-size: 13px;
+    gap: .5rem;
     border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    }
       }
-      
+      span:nth-child(1){
+        color: #74b9ff;
+        border: 1px solid;
       }
     }
+
 }
 
 .technologyBox-container{

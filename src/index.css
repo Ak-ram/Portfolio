@@ -42,3 +42,12 @@ a {
 h2 {
   margin-block: 0.5rem;
 }
+
+button {
+  all: unset;
+}
+
+hr {
+  border-color: rgb(255 255 255 / 4%);
+  border-width: 1px;
+}
