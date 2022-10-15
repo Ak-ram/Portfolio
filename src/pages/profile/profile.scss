@@ -2,6 +2,12 @@
       color: #fff;
     padding: 0.5rem;
     margin-bottom: 70px;
+    .banner{
+          height: 100px;
+    background: url("https://media-exp1.licdn.com/dms/image/C4D16AQGZmPw6YsbtFw/profile-displaybackgroundimage-shrink_350_1400/0/1660920415775?e=1671062400&v=beta&t=yMNW6yGVyuhjqlXxDDFFBAcq4JTyS7r23-jfJfiIdCg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    }
     .profile-info{
     display: flex;
     gap: 1rem;
@@ -29,6 +35,10 @@
     border-radius: 50%;
     height: 20px;
     width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     }
     .follow-me{
     background: rgb(0 160 240);
