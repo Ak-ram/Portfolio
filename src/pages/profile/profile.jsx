@@ -15,6 +15,7 @@ import {
   SiWebstorm,
   SiVisualstudio,
 } from "react-icons/si";
+import { BsChatFill } from "react-icons/bs";
 import "./profile.scss";
 const Profile = () => {
   const techs = [
@@ -36,7 +37,22 @@ const Profile = () => {
   ];
   return (
     <div className="profile-page">
-      <h1>Profile </h1>
+      <h2>Profile </h2>
+      <header className="profile-info">
+        <div className="top">
+          <img
+            src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
+            alt="profile-image"
+          />
+          <div className="contact-me">
+            <button className="chat-me">
+              <BsChatFill />
+            </button>
+            <button className="follow-me">Follow</button>
+          </div>
+        </div>
+        <div className="details">details</div>
+      </header>
       <div className="technology-container">
         {/* {techs.map((tech) => {
           return (
