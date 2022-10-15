@@ -1,4 +1,3 @@
-import "./App.css";
 import WelcomeScreen from "./components/welcomeScreen/welcomeScreen";
 import { DevBlogsContextProvider } from "./contexts/DEVAPIContext";
 import { GitHubReposContextProvider } from "./contexts/GitHubAPIContext";
