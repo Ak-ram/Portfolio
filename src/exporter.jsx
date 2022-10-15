@@ -3,10 +3,10 @@ export { default as Article } from "./components/article/article";
 export { default as Breadcrumb } from "./components/breadcrumb/breadcrumb";
 export { default as Filters } from "./components/filters/filters";
 export { default as Loader } from "./components/loader/loader";
-export { default as Navbar } from "./components/navbar/navbar";
+export { default as NavBar } from "./components/navBar/navBar";
 export { default as ProjectCard } from "./components/projectCard/projectCard";
-export { default as ProjectSlider } from "./components/projectSlider/projectSlider";
-export { default as ProjectSliderBox } from "./components/projectSliderBox/projectSliderBox";
+export { default as ProjectsSlider } from "./components/projectsSlider/projectsSlider";
+export { default as ProjectsStatsBox } from "./components/projectsStatsBox/projectsStatsBox";
 export { default as SearchBox } from "./components/searchBox/searchBox";
 export { default as TechnologyBox } from "./components/technologyBox/technologyBox";
 export { default as WelcomeScreen } from "./components/welcomeScreen/welcomeScreen";
@@ -17,21 +17,17 @@ export { default as WelcomeScreen } from "./components/welcomeScreen/welcomeScre
 
 // icons
 
-export { default as FaRegComment } from "react-icons/fa";
+export { FaRegComment } from "react-icons/fa";
+export { AiOutlineLike, AiOutlineSend } from "react-icons/ai";
+export { MdOutlineUpdate } from "react-icons/md";
+export { IoIosArrowBack } from "react-icons/io";
+export { ImHome } from "react-icons/im";
+export { GoLinkExternal } from "react-icons/go";
+export { FiSearch } from "react-icons/fi";
+export { TbMailbox } from "react-icons/tb";
+
+export { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
 export {
-  default as AiOutlineLike,
-  default as AiOutlineSend,
-} from "react-icons/ai";
-export { default as MdOutlineUpdate } from "react-icons/md";
-export { default as IoIosArrowBack } from "react-icons/io";
-export { default as ImHome } from "react-icons/im";
-import { GoLinkExternal } from "react-icons/go";
-import { SiGithub } from "react-icons/si";
-import { FiSearch } from "react-icons/fi";
-import { TbMailbox } from "react-icons/tb";
-import { AiOutlineSend } from "react-icons/ai";
-import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
-import {
   SiJavascript,
   SiCss3,
   SiTailwindcss,
@@ -46,10 +42,9 @@ import {
   SiVisualstudio,
   SiLinkedin,
   SiDevdotto,
+  SiReact,
 } from "react-icons/si";
 
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import { SiJavascript, SiCss3, SiVisualstudio, SiReact } from "react-icons/si";
-import { MdHorizontalRule, MdDoneAll } from "react-icons/md";
-import { BsArrowRightShort } from "react-icons/bs";
-
+export { HiOutlineLocationMarker } from "react-icons/hi";
+export { MdHorizontalRule, MdDoneAll } from "react-icons/md";
+export { BsArrowRightShort } from "react-icons/bs";
