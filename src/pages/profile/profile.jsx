@@ -14,6 +14,8 @@ import {
   SiGit,
   SiWebstorm,
   SiVisualstudio,
+  SiLinkedin,
+  SiDevdotto,
 } from "react-icons/si";
 import { BsChatFill } from "react-icons/bs";
 import "./profile.scss";
@@ -45,9 +47,16 @@ const Profile = () => {
             alt="profile-image"
           />
           <div className="contact-me">
-            <button className="chat-me">
-              <BsChatFill />
-            </button>
+            <span>
+              <SiLinkedin />
+            </span>
+            <span>
+              <SiDevdotto />
+            </span>
+            <span>
+              <SiGithub />
+            </span>
+
             <button className="follow-me">Follow</button>
           </div>
         </div>

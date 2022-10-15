@@ -20,11 +20,17 @@
     border-radius: 50%;
       }
       .contact-me{
-            display: flex;
+    display: flex;
     align-items: center;
-    gap: 1rem;
+    column-gap: .4rem;
+    span{
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.5rem;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    }
     .follow-me{
-          all: unset;
     background: rgb(0 160 240);
     padding: .3rem .5rem;
     border-radius: 20px;
