@@ -66,6 +66,7 @@ const Profile = () => {
             <SiGithub /> GitHub
           </span>
         </div>
+        <hr />
       </div>
       {/* <div className="banner"></div>
       <header className="profile-info">

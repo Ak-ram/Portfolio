@@ -46,3 +46,8 @@ h2 {
 button {
   all: unset;
 }
+
+hr {
+  border-color: rgb(255 255 255 / 4%);
+  border-width: 1px;
+}
