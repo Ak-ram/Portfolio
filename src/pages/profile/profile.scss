@@ -55,6 +55,25 @@
     top: 50px;
     }
     }
+    .socials{
+          display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+      span{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.3rem .7rem;
+    font-size: 13px;
+    gap: .5rem;
+    border-radius: 20px;
+      }
+      span:nth-child(1){
+        color: #74b9ff;
+        border: 1px solid;
+      }
+    }
 
 }
 

@@ -55,6 +55,17 @@ const Profile = () => {
           </span> */}
           <span className="user-title">Front End Web Developer</span>
         </div>
+        <div className="socials">
+          <span className="linkedin">
+            <SiLinkedin /> LinkedIn
+          </span>
+          <span className="github">
+            <SiGithub /> GitHub
+          </span>
+          <span className="dev">
+            <SiDevdotto /> DEV
+          </span>
+        </div>
       </div>
       {/* <div className="banner"></div>
       <header className="profile-info">
