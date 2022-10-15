@@ -1,7 +1,4 @@
-import React from "react";
-import { FaRegComment } from "react-icons/fa";
-import { AiOutlineLike } from "react-icons/ai";
-import { MdOutlineUpdate } from "react-icons/md";
+import { FaRegComment, AiOutlineLike, MdOutlineUpdate } from "../../exporter";
 import "./article.scss";
 const Article = ({
   coverImage,

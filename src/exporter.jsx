@@ -12,15 +12,22 @@ export { default as TechnologyBox } from "./components/technologyBox/technologyB
 export { default as WelcomeScreen } from "./components/welcomeScreen/welcomeScreen";
 
 // contexts
-export { useGitHubRepos } from "./contexts/GitHubAPIContext";
-export { useDevBlogs } from "./contexts/DEVAPIContext";
+export {
+  useGitHubRepos,
+  GitHubReposContextProvider,
+} from "./contexts/GitHubAPIContext";
+export { useDevBlogs, DevBlogsContextProvider } from "./contexts/DEVAPIContext";
 export {
   useReactGitHubRepos,
   useJSGitHubRepos,
   useVSCodeExtensionGitHubRepos,
 } from "./contexts/sub_GitHubAPIContext";
 // pages
-
+export { default as Blog } from "./pages/blog/blog";
+export { default as Home } from "./pages/home/home";
+export { default as Newsletter } from "./pages/newsletter/newsletter";
+export { default as Profile } from "./pages/profile/profile";
+export { default as Projects } from "./pages/projects/projects";
 // icons
 
 export { FaRegComment } from "react-icons/fa";
