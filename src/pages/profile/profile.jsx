@@ -42,7 +42,7 @@ const Profile = () => {
       <div className="banner"></div>
       <div className="profile-info">
         <img
-        className="profile-img"
+          className="profile-img"
           src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
           alt="profile-img"
         />
