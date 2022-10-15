@@ -1,5 +1,4 @@
 import React from "react";
-// import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
 import {
   FaReact,
   FaSass,
@@ -18,28 +17,8 @@ import {
   SiVisualstudio,
   SiLinkedin,
   SiDevdotto,
-  HiOutlineLocationMarker,
-  TechnologyBox,
 } from "../../exporter.jsx";
-// import TechnologyBox from "../../components/technologyBox/technologyBox";
-// import {
-//   SiJavascript,
-//   SiCss3,
-//   SiTailwindcss,
-//   SiBootstrap,
-//   SiPostman,
-//   SiAntdesign,
-//   SiGithub,
-//   SiMaterialui,
-//   SiFirebase,
-//   SiGit,
-//   SiWebstorm,
-//   SiVisualstudio,
-//   SiLinkedin,
-//   SiDevdotto,
-// } from "react-icons/si";
 
-// import { HiOutlineLocationMarker } from "react-icons/hi";
 import "./profile.scss";
 const Profile = () => {
   const techs = [
