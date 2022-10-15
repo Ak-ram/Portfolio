@@ -25,13 +25,23 @@
           display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
+    gap: .2rem;
     transform: translateY(-20px);
     strong.user-name{
       font-size: 18px;
     }
-    span.user-location{}
-    span.user-title{}
+    // span.user-location{
+    // font-size: 13px;
+    // color: #fd79a8;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 0.2rem;
+    // }
+    span.user-title{
+      font-size: 12px;
+      color: #fd79a8;
+    }
     }
     .profile-img{
     width: 70px;

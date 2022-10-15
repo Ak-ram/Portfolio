@@ -17,7 +17,8 @@ import {
   SiLinkedin,
   SiDevdotto,
 } from "react-icons/si";
-import { BsChatFill } from "react-icons/bs";
+
+import { HiOutlineLocationMarker } from "react-icons/hi";
 import "./profile.scss";
 const Profile = () => {
   const techs = [
@@ -48,8 +49,11 @@ const Profile = () => {
         />
         <div className="user-info">
           <strong className="user-name">Akram A. Abdelbasir</strong>
-          <span className="user-location">Beni Suef, Egypt.</span>
-          <span className="user-title">Front End Developer</span>
+          {/* <span className="user-location">
+            <HiOutlineLocationMarker color="#fd79a8" size={15} />
+            Beni Suef,Beni Suef, Egypt.
+          </span> */}
+          <span className="user-title">Front End Web Developer</span>
         </div>
       </div>
       {/* <div className="banner"></div>
