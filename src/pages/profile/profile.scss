@@ -3,54 +3,29 @@
     padding: 0.5rem;
     margin-bottom: 70px;
     .banner{
-          height: 100px;
-    background: url("https://media-exp1.licdn.com/dms/image/C4D16AQGZmPw6YsbtFw/profile-displaybackgroundimage-shrink_350_1400/0/1660920415775?e=1671062400&v=beta&t=yMNW6yGVyuhjqlXxDDFFBAcq4JTyS7r23-jfJfiIdCg");
-    background-size: 100%;
+              height: 100vh;
+    background: url("https://media-exp1.licdn.com/dms/image/D4D03AQFybsBqfnlnOg/profile-displayphoto-shrink_800_800/0/1664276151615?e=1671062400&v=beta&t=ehdY4bGVr7AQ9AnpnlMC63yDrHireuel_fce9LZgBBQ");
+    background-size: 100vw;
     background-repeat: no-repeat;
     }
     .profile-info{
-    display: flex;
-    gap: 1rem;
-    /* align-items: center; */
-    justify-content: space-between;
-    flex-direction: column;
-    margin-block: 1rem;
-      .top{ 
-            display: flex;
-    align-items: center;
-    justify-content: space-between;
-        padding-inline: .5rem;
-        > img{
-            width: 50px;
-    height: 50px;
+          background: rgb(255 255 255);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 60%;
+    border-radius: 50px;
+    .profile-img{
+          width: 70px;
+    height: 70px;
     border-radius: 50%;
-      }
-      .contact-me{
-    display: flex;
-    align-items: center;
-    column-gap: .4rem;
-    span{
-    background: rgba(255, 255, 255, 0.04);
-    padding: 0.5rem;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-50%);
     }
-    .follow-me{
-    background: rgb(0 160 240);
-    padding: .3rem .5rem;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
     }
-      }
-      
-      }
-    }
+
 }
 
 .technologyBox-container{

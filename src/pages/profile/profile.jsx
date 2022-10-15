@@ -40,6 +40,14 @@ const Profile = () => {
   return (
     <div className="profile-page">
       <div className="banner"></div>
+      <div className="profile-info">
+        <img
+        className="profile-img"
+          src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
+          alt="profile-img"
+        />
+      </div>
+      {/* <div className="banner"></div>
       <header className="profile-info">
         <div className="top">
           <img
@@ -86,7 +94,7 @@ const Profile = () => {
             out my GitHub profile: https://github.com/Ak-ram
           </p>
         </div>
-      </header>
+      </header> */}
       <div className="technology-container">
         {/* {techs.map((tech) => {
           return (
