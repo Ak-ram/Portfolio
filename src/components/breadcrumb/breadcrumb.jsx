@@ -1,6 +1,4 @@
-import React from "react";
-import { AiOutlineSend } from "react-icons/ai";
-import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowBack } from "../../exporter";
 import { useNavigate } from "react-router-dom";
 import "./breadcrumb.scss";
 const Breadcrumb = () => {

@@ -1,14 +1,20 @@
-import React from "react";
-import { MdHorizontalRule, MdDoneAll } from "react-icons/md";
-import TechnologyBox from "../../components/technologyBox/technologyBox";
-import ProjectCard from "../../components/projectCard/projectCard";
-import { SiJavascript, SiCss3, SiVisualstudio, SiReact } from "react-icons/si";
-import { BsArrowRightShort } from "react-icons/bs";
-import ProjectsStatsBox from "../../components/projectsStatsBox/projectsStatsBox";
-import ProjectsSlider from "../../components/projectsSlider/projectsSlider.jsx";
-import { useGitHubRepos } from "../../contexts/GitHubAPIContext";
+import {
+  MdHorizontalRule,
+  MdDoneAll,
+  TechnologyBox,
+  ProjectCard,
+  SiJavascript,
+  BsArrowRightShort,
+  ProjectsStatsBox,
+  ProjectsSlider,
+  Loader,
+  SiReact,
+  SiVisualstudio,
+  SiCss3,
+  useGitHubRepos,
+} from "../../exporter";
+
 import "./projects.scss";
-import Loader from "../../components/loader/loader";
 const Projects = () => {
   const { gitHubRepos } = useGitHubRepos();
   return (

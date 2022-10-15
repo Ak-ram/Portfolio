@@ -1,11 +1,12 @@
-import React from "react";
-import SearchBox from "../../components/searchBox/searchBox";
-import Filters from "../../components/filters/filters";
-import Article from "../../components/article/article";
-import Loader from "../../components/loader/loader";
-import { useDevBlogs } from "../../contexts/DEVAPIContext";
-import { TbMailbox } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import {
+  SearchBox,
+  Filters,
+  Article,
+  Loader,
+  useDevBlogs,
+  TbMailbox,
+} from "../../exporter";
 import "./blog.scss";
 const Blog = () => {
   const { devBlogs } = useDevBlogs();

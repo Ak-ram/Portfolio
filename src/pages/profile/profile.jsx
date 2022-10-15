@@ -1,7 +1,8 @@
 import React from "react";
-import { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
-import TechnologyBox from "../../components/technologyBox/technologyBox";
 import {
+  FaReact,
+  FaSass,
+  FaHtml5,
   SiJavascript,
   SiCss3,
   SiTailwindcss,
@@ -16,9 +17,8 @@ import {
   SiVisualstudio,
   SiLinkedin,
   SiDevdotto,
-} from "react-icons/si";
+} from "../../exporter.jsx";
 
-import { HiOutlineLocationMarker } from "react-icons/hi";
 import "./profile.scss";
 const Profile = () => {
   const techs = [

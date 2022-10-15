@@ -1,6 +1,4 @@
-import React from "react";
-import Loader from "../../components/loader/loader";
-// import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import { Loader } from "../../exporter";
 import "./projectsSlider.scss";
 import { useRef } from "react";
 
@@ -14,7 +12,7 @@ const ProjectsSlider = ({ projects }) => {
       {projects.map((project) => {
         return (
           <div key={Object.keys(project)} className="project">
-            <img src={project} alt='sm' />
+            <img src={project} alt="sm" />
           </div>
         );
       })}

@@ -1,12 +1,13 @@
 import React from "react";
 import "./navBar.scss";
-import { ImHome } from "react-icons/im";
-import { Link } from "react-router-dom";
 import {
+  ImHome,
   BsVectorPen,
   BsFillGridFill,
   BsPersonBoundingBox,
-} from "react-icons/bs";
+} from "../../exporter";
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   const handleNavLink = (e) => {
     const links = document.querySelectorAll(".link");

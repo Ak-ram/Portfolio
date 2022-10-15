@@ -1,6 +1,4 @@
-import React from "react";
-import Breadcrumb from "../../components/breadcrumb/breadcrumb.jsx";
-import { AiOutlineSend } from "react-icons/ai";
+import { AiOutlineSend, Breadcrumb } from "../../exporter";
 import "./newsletter.scss";
 const Newsletter = () => {
   return (

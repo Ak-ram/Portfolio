@@ -1,5 +1,5 @@
 import React from "react";
-import { FiSearch } from "react-icons/fi";
+import { FiSearch } from "../../exporter";
 import "./searchBox.scss";
 const SearchBox = () => {
   return (
