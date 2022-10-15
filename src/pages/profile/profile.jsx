@@ -15,6 +15,8 @@ import {
   SiWebstorm,
   SiVisualstudio,
 } from "react-icons/si";
+import { BsChatFill } from "react-icons/bs";
+import "./profile.scss";
 const Profile = () => {
   const techs = [
     { React: <FaReact color="rgb(0 160 240)" size={25} /> },
@@ -34,10 +36,25 @@ const Profile = () => {
     { Visualstudio: <SiVisualstudio color="#0074d0" size={25} /> },
   ];
   return (
-    <>
-      <h1>Profile </h1>
+    <div className="profile-page">
+      <h2>Profile </h2>
+      <header className="profile-info">
+        <div className="top">
+          <img
+            src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
+            alt="profile-image"
+          />
+          <div className="contact-me">
+            <button className="chat-me">
+              <BsChatFill />
+            </button>
+            <button className="follow-me">Follow</button>
+          </div>
+        </div>
+        <div className="details">details</div>
+      </header>
       <div className="technology-container">
-        {techs.map((tech) => {
+        {/* {techs.map((tech) => {
           return (
             <TechnologyBox
               key={Object.keys(tech)}
@@ -45,9 +62,9 @@ const Profile = () => {
               techName={Object.keys(tech)}
             />
           );
-        })}
+        })} */}
       </div>
-    </>
+    </div>
   );
 };
 

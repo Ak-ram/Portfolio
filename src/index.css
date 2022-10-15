@@ -38,3 +38,7 @@ code {
 a {
   all: unset;
 }
+
+h2 {
+  margin-block: 0.5rem;
+}

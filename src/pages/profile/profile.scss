@@ -1,4 +1,43 @@
-  .technologyBox-container{
+.profile-page{
+      color: #fff;
+    padding: 0.5rem;
+    margin-bottom: 70px;
+    .profile-info{
+    display: flex;
+    gap: 1rem;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;
+    margin-block: 1rem;
+      .top{ 
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
+        padding-inline: .5rem;
+        > img{
+            width: 50px;
+    height: 50px;
+    border-radius: 50%;
+      }
+      .contact-me{
+            display: flex;
+    align-items: center;
+    gap: 1rem;
+    .follow-me{
+          all: unset;
+    background: rgb(0 160 240);
+    padding: .3rem .5rem;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    }
+      }
+      
+      }
+    }
+}
+
+.technologyBox-container{
         border: 1px solid rgb(255 255 255 / 4%);
     border-radius: 5px;
     padding: 1rem;
