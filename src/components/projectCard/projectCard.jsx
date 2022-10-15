@@ -1,6 +1,4 @@
-import React from "react";
-import { GoLinkExternal } from "react-icons/go";
-import { SiGithub } from "react-icons/si";
+import { SiGithub, GoLinkExternal } from "../../exporter";
 import "./projectCard.scss";
 const ProjectCard = ({ topics, createdDate, githubUrl, homepage, name }) => {
   return (

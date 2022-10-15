@@ -53,4 +53,9 @@ export {
 
 export { HiOutlineLocationMarker } from "react-icons/hi";
 export { MdHorizontalRule, MdDoneAll } from "react-icons/md";
-export { BsArrowRightShort } from "react-icons/bs";
+export {
+  BsArrowRightShort,
+  BsFillGridFill,
+  BsVectorPen,
+  BsPersonBoundingBox,
+} from "react-icons/bs";

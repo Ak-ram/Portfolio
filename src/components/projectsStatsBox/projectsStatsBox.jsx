@@ -1,6 +1,4 @@
-// import React from "react";
 import "./projectsStatsBox.scss";
-// import { useGitHubRepos } from "../../contexts/GitHubAPIContext";
 import {
   useReactGitHubRepos,
   useJSGitHubRepos,
