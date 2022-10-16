@@ -36,7 +36,7 @@ export { default as AboutMeSubSection } from "./pages/profile/subSections/aboutM
 export { default as EducationSubSection } from "./pages/profile/subSections/educationSubSection/educationSubSection";
 
 // icons
-
+export { FcGraduationCap } from "react-icons/fc";
 export { FaRegComment } from "react-icons/fa";
 export { AiOutlineLike, AiOutlineSend } from "react-icons/ai";
 export { MdOutlineUpdate } from "react-icons/md";
