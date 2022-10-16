@@ -20,11 +20,12 @@
     &:after{
     content: "";
     position: absolute;
-    width: 1px;
-    background: #fd79a8;
+    width: 28px;
     height: 50px;
     left: 15px;
     top: 100%;
+    border-left: 1px solid;
+    border-radius: 0 10px;
     }
         }
         .school-details{
