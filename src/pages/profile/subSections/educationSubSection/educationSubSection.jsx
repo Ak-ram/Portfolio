@@ -7,13 +7,16 @@ const EducationSubSection = () => {
       <div className="school-container">
         <div className="school bsu">
           <span className="school-date">
-            <BiMessageAltCheck />
+            <BiMessageAltCheck color="rgb(0 160 240)" size={20} />
             2019:2022
           </span>
           <div className="school-details"></div>
         </div>
         <div className="school bsu">
-          <span className="school-date">2019:2022</span>
+          <span className="school-date">
+            <BiMessageAltCheck color="rgb(0 160 240)" size={20} />
+            2019:2022
+          </span>
           <div className="school-details"></div>
         </div>
       </div>
