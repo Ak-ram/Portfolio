@@ -83,7 +83,7 @@
     }
   }
 }
-.works{
+.skills{
   .technology-container{
     border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 5px;
@@ -93,6 +93,36 @@
     justify-content: center;
     padding: 1rem 0.5rem;
     }
+}
+.works{
+  .works-examples{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    height: 480px;
+    .small-grid,.large-grid{
+          display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 45%;
+
+    div{
+      background:rgb(0 160 240);
+      border-radius: 10px;
+      width: 100%;
+    }
+    }
+    .small-grid > div{
+        
+    height: calc(100% / 4);
+    flex-shrink: 0;
+    }
+    .large-grid > div{
+
+    height: calc(100% / 3);
+    flex-shrink: 0;
+    }
+  }
 }
 }
    }
