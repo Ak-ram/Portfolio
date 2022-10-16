@@ -86,21 +86,13 @@
 }
 .works{
   .technology-container{
-        border: 1px solid rgb(255 255 255 / 4%);
+    border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 5px;
-    padding: 1rem;
-    margin-top: 1rem;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    overflow: scroll;
-    height: auto;
-    max-height: 80%;
-    justify-content: center;
-        display: flex;
     flex-wrap: wrap;
     gap: .4rem;
     justify-content: center;
+    padding: 1rem 0.5rem;
     }
 }
 }
