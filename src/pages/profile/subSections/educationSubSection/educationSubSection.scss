@@ -64,7 +64,13 @@
     text-transform: uppercase;
     display: flex;
     gap: .3rem;
-    
+    }
+    .more-details{
+            margin: .5rem 0;
+    list-style: none;
+    padding: 0 0 0 1.3rem;
+    color: #fff;
+    font-size: 12px;
     }
         }
     }
