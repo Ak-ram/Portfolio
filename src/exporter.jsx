@@ -31,6 +31,7 @@ export { default as Projects } from "./pages/projects/projects";
 
 // subSections
 export { default as WorkSubSection } from "./pages/profile/subSections/workSubSection/workSubSection";
+export { default as SkillsSubSection } from "./pages/profile/subSections/skillsSubSection/skillsSubSection";
 
 // icons
 
