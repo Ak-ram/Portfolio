@@ -45,6 +45,7 @@ export { ImHome } from "react-icons/im";
 export { GoLinkExternal } from "react-icons/go";
 export { FiSearch } from "react-icons/fi";
 export { TbMailbox } from "react-icons/tb";
+export { BiMessageAltCheck } from "react-icons/bi";
 
 export { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
 export {
