@@ -66,66 +66,8 @@
         border: 1px solid;
       }
     }
-.about-me{
-  .about{
-        font-size: 13px;
-    text-align: justify;
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    border-radius: 5px;
-    padding: 0.5rem;
-    .read-more-btn{
-          color: #74b9ff;
-    text-decoration: underline;
-    margin-left: .1rem;
-    &:active{
-      color: rgb(0 160 240)
-    }
-    }
-  }
-}
-.skills{
-  .technology-container{
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: .4rem;
-    justify-content: center;
-    padding: 1rem 0.5rem;
-    }
-}
-.works{
-  .works-examples{
-    display: flex;
-    justify-content: center;
-    gap: .4rem;
-    height: 480px;
-    margin-top: 2rem;
-    .small-grid,.large-grid{
-          display: flex;
-    flex-direction: column;
-    gap: .3rem;
-    width: 45%;
-    justify-content: end;
 
-    div{
-      background: #10151e;
-      border-radius: 10px;
-      width: 100%;
-      border: 1px dashed rgb(110 110 110 / 42%);
-    }
-    }
-    .small-grid > div{
-        
-    height: calc(100% / 4);
-    flex-shrink: 0;
-    }
-    .large-grid > div{
 
-    height: calc(100% / 3);
-    flex-shrink: 0;
-    }
-  }
-}
+
 }
    }

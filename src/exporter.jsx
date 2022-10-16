@@ -28,6 +28,12 @@ export { default as Home } from "./pages/home/home";
 export { default as Newsletter } from "./pages/newsletter/newsletter";
 export { default as Profile } from "./pages/profile/profile";
 export { default as Projects } from "./pages/projects/projects";
+
+// subSections
+export { default as WorkSubSection } from "./pages/profile/subSections/workSubSection/workSubSection";
+export { default as SkillsSubSection } from "./pages/profile/subSections/skillsSubSection/skillsSubSection";
+export { default as AboutMeSubSection } from "./pages/profile/subSections/aboutMeSubSection/aboutMeSubSection";
+
 // icons
 
 export { FaRegComment } from "react-icons/fa";
