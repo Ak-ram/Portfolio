@@ -74,7 +74,9 @@ const Profile = () => {
           <p className="about">
             I'm happy you're here to hear me out 👋❤, so let me tell you a le
             bit about myself. By the way, prior to beginning front-end{" "}
-            <span id="dots">...</span>
+            <span id="dots" className={`${isHidden ? "" : "hide"}`}>
+              ...
+            </span>
             <span className={`${isHidden ? "hide" : ""}`}>
               , I was a geology student. ⛏ Two years ago, I started learning
               front-end since I had a passion for designing and coding & today,
@@ -89,9 +91,12 @@ const Profile = () => {
               JavaScript, Redux, TypeScript, Unit Testing, HTML, CSS, SASS,
               Bootstrap, Tailwind, Ant Design, Git, GitHub, and Postman thanks
               to these programs. What do I do nowadays? 🧐 I recently published
-              tech articles about front-end topics on my blog. ✍ Visit my blog:
-              https://dev.to/ak_ram 🚨 Check out my GitHub profile:
-              https://github.com/Ak-ram
+              tech articles about front-end topics on my blog. ✍ Visit my{" "}
+              <a href="https://dev.to/ak_ram">blog</a>
+              🚨 Check out my <a href="https://github.com/Ak-ram">
+                GitHub
+              </a>{" "}
+              profile
             </span>
             <button
               onClick={() => setHidden(!isHidden)}
