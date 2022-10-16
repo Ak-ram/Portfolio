@@ -4,10 +4,35 @@
     border-radius: 5px;
     padding: 1rem;
     .school{
-            height: 100px;
+        height: 100px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        .school-date{
+    margin-bottom: .5rem;
+    display: inline-block;
+    font-size: 11px;
+    color: #fd79a8;
+    font-weight: bold;
+    position: relative;
+    &:after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: #fd79a8;
+    height: 100px;
+    left: 3px;
+    top: 100%;
+    }
+        }
+        .school-details{
+                    height: 100%;
+                        border-radius: 10px;
+                        align-self: end;
     width: 90%;
     background: #10151e;
-    margin: 0 auto;
-    border-radius: 10px;
+        }
     }
 }
