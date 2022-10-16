@@ -73,7 +73,7 @@ const Profile = () => {
           <h5>About</h5>
           <p className="about">
             I'm happy you're here to hear me out 👋❤, so let me tell you a le
-            bit about myself. By the way, prior to beginning front-end{" "}
+            bit about myself. By the way, prior to beginning front-end
             <span id="dots" className={`${isHidden ? "" : "hide"}`}>
               ...
             </span>
