@@ -4,23 +4,28 @@
     margin-bottom: 70px;
     .banner{
     height: calc((100vh - 70px) / 1.5);
-    width: 100%;
+    /* width: 87%; */
     background: url("https://avatars.githubusercontent.com/u/69124951?v=4");
-    background-size: 100vw;
+    background-size: 80vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0% 40%;
+    background-position: 50% 40%;
     }
     .profile-info{
-    background: rgba(255, 255, 255, 0.04);
-    position: absolute;
-    top: 65%;
-    width: -webkit-fill-available;
-    left: 0;
+    background: #151b26;
     border-radius: 50px 50px 0 0;
     margin: -30px 0;
-    padding: 0 1rem 1rem;
-    height: 100vh;
+    position: relative;
+    padding: 3rem 1rem;
+    .profile-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    }
     .user-info{
     display: flex;
     flex-direction: column;
@@ -30,63 +35,65 @@
     strong.user-name{
       font-size: 18px;
     }
-    // span.user-location{
-    // font-size: 13px;
-    // color: #fd79a8;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // gap: 0.2rem;
-    // }
+  
     span.user-title{
       font-size: 12px;
       color: #fd79a8;
     }
     }
-    .profile-img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, -50%);
 
-    }
-    }
-    .socials{
-          display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-    margin-block: 1rem;
+ 
+.socials{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+      margin-block: 1rem;
       span{
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.04);
-    padding: 0.3rem .7rem;
-    font-size: 13px;
-    gap: .5rem;
-    border-radius: 20px;
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 0.3rem .7rem;
+      font-size: 13px;
+      gap: .5rem;
+      border-radius: 20px;
       }
       span:nth-child(1){
         color: #74b9ff;
         border: 1px solid;
       }
     }
-
+.about-me{
+  h5{
+    margin-block: 1rem;
+  }
+  .about{
+    font-size: 13px;
+    text-align: justify;
+    padding: 0 .1rem;
+    // .more-content{
+    //   display: none;
+    // }
+    .read-more-btn{
+          color: #74b9ff;
+    text-decoration: underline;
+    margin-left: .1rem;
+    &:active{
+      color: rgb(0 160 240)
+    }
+    }
+  }
 }
-
-.technologyBox-container{
-        border: 1px solid rgb(255 255 255 / 4%);
+.works{
+  .technology-container{
+    border: 1px solid rgba(255, 255, 255, 0.04);
     border-radius: 5px;
-    padding: 1rem;
-    margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    overflow: scroll;
-    height: auto;
-    max-height: 80%;
-    justify-content: center
+    gap: .4rem;
+    justify-content: center;
+    padding: 1rem 0.5rem;
     }
+}
+}
+   }
