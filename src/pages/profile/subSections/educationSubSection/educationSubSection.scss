@@ -14,7 +14,7 @@
         .school-date{
     margin-bottom: 0.5rem;
     font-size: 11px;
-    color: #fd79a8;
+    color: rgb(0 160 240);
     font-weight: bold;
     position: relative;
 //     align-items: center;
@@ -51,11 +51,21 @@
         height: 100%;
     border-radius: 10px;
     align-self: end;
-    width: 90%;
+    width: 80%;
+    padding: 1rem;
     background: #10151e;
     filter: drop-shadow(1px 2px 2px #0a0a0a);
     color: #0a0a0a;
     border-left: 1px solid rgb(58 61 68);
+    .school-name{
+    color: #fd79a8;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    gap: .3rem;
+    
+    }
         }
     }
 }

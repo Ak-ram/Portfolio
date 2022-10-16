@@ -47,7 +47,7 @@ export { FiSearch } from "react-icons/fi";
 export { TbMailbox } from "react-icons/tb";
 export { BiMessageAltCheck } from "react-icons/bi";
 
-export { FaReact, FaSass, FaHtml5 } from "react-icons/fa";
+export { FaReact, FaSass, FaHtml5, FaUniversity } from "react-icons/fa";
 export {
   SiJavascript,
   SiCss3,
