@@ -19,7 +19,6 @@ import {
   SiDevdotto,
   TechnologyBox,
 } from "../../exporter.jsx";
-
 import "./profile.scss";
 const Profile = () => {
   const [isHidden, setHidden] = useState(true);
@@ -70,7 +69,7 @@ const Profile = () => {
         </div>
         <hr />
         <div className="about-me">
-          <h5>About</h5>
+          <h5>📢 About</h5>
           <p className="about">
             I'm happy you're here to hear me out 👋❤, so let me tell you a le
             bit about myself. By the way, prior to beginning front-end
@@ -107,7 +106,7 @@ const Profile = () => {
           </p>
         </div>
         <div className="skills">
-          <h5> Skills </h5>
+          <h5>✨ Skills </h5>
           <div className="technology-container">
             {techs.map((tech) => {
               return (
@@ -121,7 +120,9 @@ const Profile = () => {
           </div>
         </div>
         <div className="works">
-          <h5>Works</h5>
+          <h5>
+            🔨 Works
+          </h5>
           <div className="works-examples">
             <div className="small-grid">
               <div></div>
