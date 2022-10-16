@@ -1,3 +1,4 @@
+import "./educationSubSection.scss";
 const EducationSubSection = () => {
   return (
     <div className="education">
