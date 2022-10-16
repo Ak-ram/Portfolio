@@ -98,16 +98,17 @@
   .works-examples{
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: .4rem;
     height: 480px;
     .small-grid,.large-grid{
           display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .3rem;
     width: 45%;
+    justify-content: end;
 
     div{
-      background:rgb(0 160 240);
+      background: #10151e;
       border-radius: 10px;
       width: 100%;
     }
