@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaReact,
   FaSass,
@@ -21,6 +21,7 @@ import {
 
 import "./profile.scss";
 const Profile = () => {
+  const [isHidden, setHidden] = useState(true);
   const techs = [
     { React: <FaReact color="rgb(0 160 240)" size={25} /> },
     { Javscript: <SiJavascript color="yellow" size={25} /> },
@@ -73,7 +74,7 @@ const Profile = () => {
             I'm happy you're here to hear me out 👋❤, so let me tell you a le
             bit about myself. By the way, prior to beginning front-end
             programming, I was a geology student. ⛏ <span id="dots">...</span>
-            <span className="more-content">
+            <span className={`${isHidden ? "hide" : ""}`}>
               Two years ago, I started learning front-end since I had a passion
               for designing and coding & today, I can state with pride that I am
               a front-end developer. What Can I DO? 🤔 ⮞ Due to my ability to
@@ -90,10 +91,16 @@ const Profile = () => {
               topics on my blog. ✍ Visit my blog: https://dev.to/ak_ram 🚨
               Check out my GitHub profile: https://github.com/Ak-ram
             </span>
-            <button onclick="myFunction()" className="read-more-btn">
-              Read more
+            <button
+              onClick={() => setHidden(!isHidden)}
+              className="read-more-btn"
+            >
+              {isHidden ? "Read more" : "Read less"}
             </button>
           </p>
+        </div>
+        <div className="Works">
+          <h5> Works </h5>
         </div>
       </div>
       {/* 
