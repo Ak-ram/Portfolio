@@ -18,6 +18,7 @@ import {
   SiLinkedin,
   SiDevdotto,
   TechnologyBox,
+  WorkSubSection,
 } from "../../exporter.jsx";
 import "./profile.scss";
 const Profile = () => {
@@ -119,24 +120,7 @@ const Profile = () => {
             })}
           </div>
         </div>
-        <div className="works">
-          <h5>
-            🔨 Works
-          </h5>
-          <div className="works-examples">
-            <div className="small-grid">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <div className="large-grid">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
+        <WorkSubSection />
       </div>
     </div>
   );
