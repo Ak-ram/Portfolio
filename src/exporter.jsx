@@ -10,6 +10,7 @@ export { default as ProjectsStatsBox } from "./components/projectsStatsBox/proje
 export { default as SearchBox } from "./components/searchBox/searchBox";
 export { default as TechnologyBox } from "./components/technologyBox/technologyBox";
 export { default as WelcomeScreen } from "./components/welcomeScreen/welcomeScreen";
+export { default as SchoolTimeLine } from "./components/schoolTimeLine/schoolTimeLine";
 
 // contexts
 export {

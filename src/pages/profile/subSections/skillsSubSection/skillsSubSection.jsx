@@ -40,15 +40,13 @@ const SkillsSubSection = () => {
     <div className="skills">
       <h5>✨ Skills </h5>
       <div className="technology-container">
-        {techs.map((tech) => {
-          return (
-            <TechnologyBox
-              key={Object.keys(tech)}
-              techIcon={Object.values(tech)}
-              techName={Object.keys(tech)}
-            />
-          );
-        })}
+        {techs?.map((tech, i) => (
+          <TechnologyBox
+            key={i}
+            techIcon={Object.values(tech)}
+            techName={Object.keys(tech)}
+          />
+        ))}
       </div>
     </div>
   );
