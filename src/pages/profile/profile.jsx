@@ -5,6 +5,7 @@ import {
   SkillsSubSection,
   WorkSubSection,
   AboutMeSubSection,
+  EducationSubSection,
 } from "../../exporter.jsx";
 import avatar from "../../assests/avatar.webp";
 import "./profile.scss";
@@ -37,6 +38,7 @@ const Profile = () => {
         <AboutMeSubSection />
         <SkillsSubSection />
         <WorkSubSection />
+        <EducationSubSection />
       </div>
     </div>
   );

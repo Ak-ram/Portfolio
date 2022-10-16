@@ -33,6 +33,7 @@ export { default as Projects } from "./pages/projects/projects";
 export { default as WorkSubSection } from "./pages/profile/subSections/workSubSection/workSubSection";
 export { default as SkillsSubSection } from "./pages/profile/subSections/skillsSubSection/skillsSubSection";
 export { default as AboutMeSubSection } from "./pages/profile/subSections/aboutMeSubSection/aboutMeSubSection";
+export { default as EducationSubSection } from "./pages/profile/subSections/educationSubSection/educationSubSection";
 
 // icons
 
