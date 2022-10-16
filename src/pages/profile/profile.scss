@@ -2,6 +2,9 @@
       color: #fff;
     padding: 0.5rem;
     margin-bottom: 70px;
+    h5{
+          margin-block: 1rem .5rem;
+    }
     .banner{
     height: calc((100vh - 70px) / 1.5);
     /* width: 87%; */
@@ -64,16 +67,12 @@
       }
     }
 .about-me{
-  h5{
-    margin-block: 1rem;
-  }
   .about{
-    font-size: 13px;
+        font-size: 13px;
     text-align: justify;
-    padding: 0 .1rem;
-    // .more-content{
-    //   display: none;
-    // }
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 5px;
+    padding: 0.5rem;
     .read-more-btn{
           color: #74b9ff;
     text-decoration: underline;

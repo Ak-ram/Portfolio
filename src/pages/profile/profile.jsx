@@ -97,7 +97,7 @@ const Profile = () => {
               onClick={() => setHidden(!isHidden)}
               className="read-more-btn"
             >
-              {isHidden ? "Read more" : "Read less"}
+              {isHidden ? " Read more" : " Read less"}
             </button>
           </p>
         </div>
