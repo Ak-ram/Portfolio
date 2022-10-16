@@ -18,10 +18,10 @@ const EducationSubSection = () => {
             </div>
             <ul className="more-details">
               <li>
-                <b>Grade: </b>3.23/5 ( V.Good )
+                <b>Grade : </b> 3.23/5 ( V.Good )
               </li>
               <li>
-                <b>Relevent Courses: </b>
+                <b>Relevent Courses : </b>
               </li>
             </ul>
           </div>

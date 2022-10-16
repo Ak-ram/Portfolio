@@ -58,7 +58,7 @@
     color: #0a0a0a;
     border-left: 1px solid rgb(58 61 68);
     .school-name{
-    color: #fd79a8;
+    color: #ffffff4d;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
@@ -71,6 +71,10 @@
     padding: 0 0 0 1.3rem;
     color: #fff;
     font-size: 12px;
+    li > b{
+    color: #fff;
+    margin-right: .5rem;
+    }
     }
         }
     }
