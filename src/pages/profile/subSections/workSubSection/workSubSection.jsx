@@ -1,4 +1,4 @@
-import "./workSubSection.scss"
+import "./workSubSection.scss";
 const WorkSubSection = () => {
   return (
     <div className="work">
