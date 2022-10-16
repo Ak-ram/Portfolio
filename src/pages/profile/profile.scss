@@ -74,7 +74,24 @@
         border: 1px solid;
       }
     }
-
+.about-me{
+  h5{
+    margin-block: 1rem;
+  }
+  .about{
+    font-size: 13px;
+    text-align: justify;
+    padding: 0 .1rem;
+    .more-content{
+      display: none;
+    }
+    .read-more-btn{
+          color: #74b9ff;
+    text-decoration: underline;
+    margin-left: .1rem;
+    }
+  }
+}
 }
 
 .technologyBox-container{
