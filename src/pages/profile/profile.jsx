@@ -17,6 +17,7 @@ import {
   SiVisualstudio,
   SiLinkedin,
   SiDevdotto,
+  TechnologyBox,
 } from "../../exporter.jsx";
 
 import "./profile.scss";
@@ -99,30 +100,20 @@ const Profile = () => {
             </button>
           </p>
         </div>
-        <div className="Works">
-          <h5> Works </h5>
+        <div className="works">
+          <h5> Skills </h5>
+          <div className="technology-container">
+            {techs.map((tech) => {
+              return (
+                <TechnologyBox
+                  key={Object.keys(tech)}
+                  techIcon={Object.values(tech)}
+                  techName={Object.keys(tech)}
+                />
+              );
+            })}
+          </div>
         </div>
-      </div>
-      {/* 
-        <div className="details">
-          <h3>Akram A. Abdelbasir</h3>
-          <strong>
-            Front-End Web Developer 🎨 | JavaScript | ReactJs | FWD Graduate |
-            Blogger ✍
-          </strong>
-         
-        </div>
-      </header> */}
-      <div className="technology-container">
-        {/* {techs.map((tech) => {
-          return (
-            <TechnologyBox
-              key={Object.keys(tech)}
-              techIcon={Object.values(tech)}
-              techName={Object.keys(tech)}
-            />
-          );
-        })} */}
       </div>
     </div>
   );
