@@ -1,5 +1,9 @@
 import "./educationSubSection.scss";
-import { FaUniversity, FcGraduationCap } from "../../../../exporter";
+import {
+  FaUniversity,
+  FcGraduationCap,
+  SchoolTimeLine,
+} from "../../../../exporter";
 import udacityImg from "../../../../assests/udacity.png";
 import bsuImg from "../../../../assests/bsu.png";
 const EducationSubSection = () => {
@@ -9,44 +13,18 @@ const EducationSubSection = () => {
         <FcGraduationCap /> Education
       </h5>
       <div className="school-container">
-        <div className="school bsu">
-          <span className="school-date">
-            {/* <TbNumber3 color="rgb(0 160 240)" size={20} /> */}
-            <span>2019:2022</span>
-          </span>
-          <div
-            className="school-details"
-            style={{ backgroundImage: `url(${udacityImg})` }}
-          >
-            <div className="school-name">
-              <FaUniversity size={15} /> fwd, udacity Program.
-            </div>
-            <ul className="more-details">
-              <li>
-                <b>Grade : </b> Nanodegree
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="school bsu">
-          <span className="school-date">
-            {/* <TbNumber3 color="rgb(0 160 240)" size={20} /> */}
-            <span>2019:2022</span>
-          </span>
-          <div
-            className="school-details"
-            style={{ backgroundImage: `url(${bsuImg})` }}
-          >
-            <div className="school-name">
-              <FaUniversity size={15} /> BSc, Beni-Suef University.
-            </div>
-            <ul className="more-details">
-              <li>
-                <b>Grade : </b> 3.23/5 ( V.Good )
-              </li>
-            </ul>
-          </div>
-        </div>
+        <SchoolTimeLine
+          schoolName={"FWD, Udacity Progam"}
+          schoolPeriod={"8/2022 : 9/2022"}
+          schoolBrandUrl={udacityImg}
+          schoolGrade={"Nanodegree"}
+        />
+        <SchoolTimeLine
+          schoolName={"BSc, Beni-Suef University"}
+          schoolPeriod={"9/2019 : 7/2022"}
+          schoolBrandUrl={bsuImg}
+          schoolGrade={"3.24/5 (V.Good)"}
+        />
       </div>
     </div>
   );
