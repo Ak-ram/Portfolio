@@ -20,9 +20,6 @@ const EducationSubSection = () => {
               <li>
                 <b>Grade : </b> 3.23/5 ( V.Good )
               </li>
-              <li>
-                <b>Relevent Courses : </b>
-              </li>
             </ul>
           </div>
         </div>
