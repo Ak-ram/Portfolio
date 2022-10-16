@@ -5,18 +5,16 @@ import {
   SkillsSubSection,
   WorkSubSection,
   AboutMeSubSection,
+  EducationSubSection,
 } from "../../exporter.jsx";
+import avatar from "../../assests/avatar.webp";
 import "./profile.scss";
 const Profile = () => {
   return (
     <div className="profile-page">
       <div className="banner"></div>
       <div className="profile-info">
-        <img
-          className="profile-img"
-          src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
-          alt="profile-img"
-        />
+        <img className="profile-img" src={avatar} alt="profile-img" />
         <div className="user-info">
           <strong className="user-name">Akram A. Abdelbasir</strong>
           {/* <span className="user-location">
@@ -40,6 +38,7 @@ const Profile = () => {
         <AboutMeSubSection />
         <SkillsSubSection />
         <WorkSubSection />
+        <EducationSubSection />
       </div>
     </div>
   );
