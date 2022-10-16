@@ -4,12 +4,12 @@
     margin-bottom: 70px;
     .banner{
     height: calc((100vh - 70px) / 1.5);
-    width: 100%;
+    /* width: 87%; */
     background: url("https://avatars.githubusercontent.com/u/69124951?v=4");
-    background-size: 100vw;
+    background-size: 80vw;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0% 40%;
+    background-position: 50% 40%;
     }
     .profile-info{
     background: rgba(255, 255, 255, 0.04);
