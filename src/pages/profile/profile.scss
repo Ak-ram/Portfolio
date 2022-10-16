@@ -66,23 +66,7 @@
         border: 1px solid;
       }
     }
-.about-me{
-  .about{
-        font-size: 13px;
-    text-align: justify;
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    border-radius: 5px;
-    padding: 0.5rem;
-    .read-more-btn{
-          color: #74b9ff;
-    text-decoration: underline;
-    margin-left: .1rem;
-    &:active{
-      color: rgb(0 160 240)
-    }
-    }
-  }
-}
+
 
 
 }
