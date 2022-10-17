@@ -48,7 +48,13 @@ export { FiSearch } from "react-icons/fi";
 export { TbMailbox } from "react-icons/tb";
 export { BiMessageAltCheck } from "react-icons/bi";
 
-export { FaReact, FaSass, FaHtml5, FaUniversity } from "react-icons/fa";
+export {
+  FaReact,
+  FaSass,
+  FaHtml5,
+  FaUniversity,
+  FaPenNib,
+} from "react-icons/fa";
 export {
   SiJavascript,
   SiCss3,
@@ -68,11 +74,16 @@ export {
 } from "react-icons/si";
 
 export { HiOutlineLocationMarker } from "react-icons/hi";
-export { MdHorizontalRule, MdDoneAll } from "react-icons/md";
+export {
+  MdHorizontalRule,
+  MdDoneAll,
+  MdEmail,
+} from "react-icons/md";
 export {
   BsArrowRightShort,
   BsFillGridFill,
   BsVectorPen,
   BsFillGearFill,
   BsFillPersonFill,
+  BsPencilFill,
 } from "react-icons/bs";
