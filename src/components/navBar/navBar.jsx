@@ -1,7 +1,6 @@
 import React from "react";
 import "./navBar.scss";
 import {
-  TbMailbox,
   MdEmail,
   BsFillGridFill,
   BsFillPersonFill,
