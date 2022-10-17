@@ -74,11 +74,7 @@ export {
 } from "react-icons/si";
 
 export { HiOutlineLocationMarker } from "react-icons/hi";
-export {
-  MdHorizontalRule,
-  MdDoneAll,
-  MdEmail,
-} from "react-icons/md";
+export { MdHorizontalRule, MdDoneAll, MdEmail } from "react-icons/md";
 export {
   BsArrowRightShort,
   BsFillGridFill,
