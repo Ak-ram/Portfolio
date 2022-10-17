@@ -42,7 +42,7 @@ const SkillsSubSection = () => {
       <div className="technology-container">
         {techs?.map((tech, i) => (
           <TechnologyBox
-            key={i}
+            key={Object.values(tech)}
             techIcon={Object.values(tech)}
             techName={Object.keys(tech)}
           />
