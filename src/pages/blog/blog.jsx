@@ -39,7 +39,7 @@ const Blog = () => {
     <div className="blog-page">
       <header>
         <h2>
-          Blogs{" "}
+          Blogs
           <Link to={"/newsletter"}>
             <TbMailbox />
           </Link>

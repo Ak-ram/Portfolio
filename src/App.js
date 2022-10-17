@@ -3,11 +3,11 @@ import {
   DevBlogsContextProvider,
   GitHubReposContextProvider,
   NavBar,
-  Home,
   Profile,
   Projects,
   Blog,
   Newsletter,
+  Settings,
 } from "./exporter";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -23,11 +23,11 @@ function App() {
         <GitHubReposContextProvider>
           <NavBar />
           <Routes>
-            <Route path="/" element={<Home />}></Route>
+            <Route path="/" element={<Profile />}></Route>
             <Route path="/projects" element={<Projects />}></Route>
             <Route path="/blog" element={<Blog />}></Route>
-            <Route path="/profile" element={<Profile />}></Route>
             <Route path="/newsletter" element={<Newsletter />}></Route>
+            <Route path="/settings" element={<Settings />}></Route>
           </Routes>
         </GitHubReposContextProvider>
       </DevBlogsContextProvider>

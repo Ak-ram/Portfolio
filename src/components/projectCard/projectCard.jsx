@@ -1,9 +1,10 @@
 import { SiGithub, GoLinkExternal } from "../../exporter";
+import { Link } from "react-router-dom";
 import "./projectCard.scss";
 const ProjectCard = ({ topics, createdDate, githubUrl, homepage, name }) => {
   return (
     <>
-      <div className="projectCard">
+      <Link to={name.toLowerCase()} className="projectCard">
         {/* <div className="top">{icon}</div> */}
         <div className="details">
           <span className="createdDate">{createdDate.substr(0, 10)}</span>
@@ -26,7 +27,7 @@ const ProjectCard = ({ topics, createdDate, githubUrl, homepage, name }) => {
             </div>
           </footer>
         </div>
-      </div>
+      </Link>
     </>
   );
 };

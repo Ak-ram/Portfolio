@@ -25,7 +25,7 @@ export {
 } from "./contexts/sub_GitHubAPIContext";
 // pages
 export { default as Blog } from "./pages/blog/blog";
-export { default as Home } from "./pages/home/home";
+export { default as Settings } from "./pages/settings/settings";
 export { default as Newsletter } from "./pages/newsletter/newsletter";
 export { default as Profile } from "./pages/profile/profile";
 export { default as Projects } from "./pages/projects/projects";
@@ -48,7 +48,13 @@ export { FiSearch } from "react-icons/fi";
 export { TbMailbox } from "react-icons/tb";
 export { BiMessageAltCheck } from "react-icons/bi";
 
-export { FaReact, FaSass, FaHtml5, FaUniversity } from "react-icons/fa";
+export {
+  FaReact,
+  FaSass,
+  FaHtml5,
+  FaUniversity,
+  FaPenNib,
+} from "react-icons/fa";
 export {
   SiJavascript,
   SiCss3,
@@ -68,10 +74,16 @@ export {
 } from "react-icons/si";
 
 export { HiOutlineLocationMarker } from "react-icons/hi";
-export { MdHorizontalRule, MdDoneAll } from "react-icons/md";
+export {
+  MdHorizontalRule,
+  MdDoneAll,
+  MdEmail,
+} from "react-icons/md";
 export {
   BsArrowRightShort,
   BsFillGridFill,
   BsVectorPen,
-  BsPersonBoundingBox,
+  BsFillGearFill,
+  BsFillPersonFill,
+  BsPencilFill,
 } from "react-icons/bs";

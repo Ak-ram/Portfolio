@@ -27,8 +27,9 @@
         justify-content: center;
         cursor: pointer;
         a{
-    // all: unset;
-    padding: 0.3rem;
+        display: flex;
+    align-items: center;
+    justify-content: center;
         }
     }
     span{
@@ -46,5 +47,5 @@
     color: #fff !important;
     background: #ffffff0a; // rgb(0 80 120 / 23%);
     border-radius: 5px;
-    flex-grow: .5;
+    flex-grow: .2;
 }
