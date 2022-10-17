@@ -10,7 +10,6 @@ const ProjectDescription = () => {
   useEffect(() => {
     gitHubRepos?.find((repo) => {
       if (repo.name.toLowerCase() === params.projectName) {
-        console.log(repo);
         setCurrentRepo(repo);
       }
     });
@@ -19,6 +18,7 @@ const ProjectDescription = () => {
   return (
     <>
       <h1>{currentRepo.id}</h1>
+      <p>{currentRepo.description}</p>
       {/* <Outlet /> */}
     </>
   );
