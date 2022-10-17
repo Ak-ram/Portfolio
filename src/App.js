@@ -25,9 +25,12 @@ function App() {
           <NavBar />
           <Routes>
             <Route path="/" element={<Profile />}></Route>
-            <Route path="/projects" element={<Projects />}>
-              <Route path=":name" element={<ProjectDescription />}></Route>
-            </Route>
+            <Route path="/projects" element={<Projects />}></Route>
+            {/* Dynamic routing */}
+            <Route
+              path="projects/:projectName"
+              element={<ProjectDescription />}
+            ></Route>
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/newsletter" element={<Newsletter />}></Route>
             <Route path="/settings" element={<Settings />}></Route>
