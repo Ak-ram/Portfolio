@@ -1,22 +1,21 @@
+import {useEffect, useState} from "react";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+
 import {
-  WelcomeScreen,
+  Blog,
   DevBlogsContextProvider,
   GitHubReposContextProvider,
   NavBar,
+  Newsletter,
   Profile,
   Projects,
-  Blog,
-  Newsletter,
   Settings,
+  WelcomeScreen,
 } from "./exporter";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect, useState } from "react";
 function App() {
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 3500);
-  }, []);
+  useEffect(() => { setTimeout(() => setLoading(false), 3500); }, []);
   let appContent = (
     <Router>
       <DevBlogsContextProvider>
@@ -33,7 +32,9 @@ function App() {
       </DevBlogsContextProvider>
     </Router>
   );
-  return <>{loading ? <WelcomeScreen /> : appContent}</>;
+  return <>{loading ? <WelcomeScreen /> : appContent
+}
+< />;
 }
 
 export default App;
