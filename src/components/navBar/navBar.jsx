@@ -4,7 +4,8 @@ import {
   ImHome,
   BsVectorPen,
   BsFillGridFill,
-  BsPersonBoundingBox,
+  BsFillPersonFill,
+  BsFillGearFill,
 } from "../../exporter";
 import { Link } from "react-router-dom";
 
@@ -23,8 +24,8 @@ const NavBar = () => {
       <ul className="navbar">
         <li className="active link" onClick={(e) => handleNavLink(e)}>
           <Link to={"./"}>
-            <ImHome />
-            <span className="linkText">Home</span>
+            <BsFillPersonFill />
+            <span className="linkText">Profile</span>
           </Link>
         </li>
 
@@ -41,9 +42,9 @@ const NavBar = () => {
           </Link>
         </li>
         <li className="link" onClick={(e) => handleNavLink(e)}>
-          <Link to={"./profile"}>
-            <BsPersonBoundingBox />
-            <span className="hide linkText">Profile</span>
+          <Link to={"./settings"}>
+            <BsFillGearFill />
+            <span className="hide linkText">Settings</span>
           </Link>
         </li>
       </ul>
