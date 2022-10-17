@@ -29,7 +29,7 @@ function App() {
             {/* Dynamic routing */}
             <Route
               path="projects/:projectName"
-              element={<ProjectDescription />}
+              element={<ProjectDescription  />}
             ></Route>
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/newsletter" element={<Newsletter />}></Route>
