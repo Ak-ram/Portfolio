@@ -8,6 +8,7 @@ import {
   Blog,
   Newsletter,
   Settings,
+  ProjectDescription,
 } from "./exporter";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -25,6 +26,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Profile />}></Route>
             <Route path="/projects" element={<Projects />}></Route>
+            {/* Dynamic routing */}
+            <Route
+              path="projects/:projectName"
+              element={<ProjectDescription  />}
+            ></Route>
             <Route path="/blog" element={<Blog />}></Route>
             <Route path="/newsletter" element={<Newsletter />}></Route>
             <Route path="/settings" element={<Settings />}></Route>

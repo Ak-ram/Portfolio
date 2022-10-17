@@ -11,6 +11,7 @@ export { default as SearchBox } from "./components/searchBox/searchBox";
 export { default as TechnologyBox } from "./components/technologyBox/technologyBox";
 export { default as WelcomeScreen } from "./components/welcomeScreen/welcomeScreen";
 export { default as SchoolTimeLine } from "./components/schoolTimeLine/schoolTimeLine";
+export { default as ProjectDescription } from "./components/projectDescription/projectDescription";
 
 // contexts
 export {
@@ -74,11 +75,7 @@ export {
 } from "react-icons/si";
 
 export { HiOutlineLocationMarker } from "react-icons/hi";
-export {
-  MdHorizontalRule,
-  MdDoneAll,
-  MdEmail,
-} from "react-icons/md";
+export { MdHorizontalRule, MdDoneAll, MdEmail } from "react-icons/md";
 export {
   BsArrowRightShort,
   BsFillGridFill,
