@@ -20,7 +20,6 @@ const Projects = () => {
   return (
     <>
       <div className="projects-page">
-        {console.log(gitHubRepos)}
         <h2>Projects</h2>
         <ProjectsStatsBox />
         <section className="technologies">
@@ -68,6 +67,7 @@ const Projects = () => {
             {gitHubRepos.length ? (
               gitHubRepos.map(
                 ({
+                  id,
                   topics,
                   pushed_at,
                   clone_url,
@@ -76,6 +76,7 @@ const Projects = () => {
                   homepage,
                 }) => (
                   <ProjectCard
+                    key={id}
                     topics={topics}
                     createdDate={pushed_at}
                     githubUrl={clone_url}

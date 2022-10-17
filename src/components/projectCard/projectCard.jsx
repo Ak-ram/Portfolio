@@ -14,13 +14,13 @@ const ProjectCard = ({ topics, createdDate, githubUrl, homepage, name }) => {
               {topics[0]} {topics[1]} {topics[2]}
             </span>
             <div className="external-links">
-              <a href={githubUrl}>
+              <button href={githubUrl}>
                 <SiGithub size={16} />
-              </a>
+              </button>
               {homepage ? (
-                <a href={homepage}>
+                <button href={homepage}>
                   <GoLinkExternal size={16} />
-                </a>
+                </button>
               ) : (
                 ""
               )}
