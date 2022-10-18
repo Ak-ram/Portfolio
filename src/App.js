@@ -13,6 +13,7 @@ import {
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
+import "./App.scss";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
