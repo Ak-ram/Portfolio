@@ -1,78 +1,75 @@
-.school{
-
-            height: fit-content;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-        .school-date{
+.school {
+  height: fit-content;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  .school-date {
     margin-bottom: 0.5rem;
     font-size: 11px;
     color: var(--clr_cyan_dark_2);
     font-weight: bold;
     position: relative;
-//     align-items: center;
+    //     align-items: center;
     display: flex;
     gap: 0.3rem;
-    span{
-        margin-left: -10px;
+    span {
+      margin-left: -10px;
     }
-    &:after{
-    content: "";
-    position: absolute;
-    width: 7%;
-    height: 50px;
-    left: 10px;
-    top: 100%;
-    border: 1px solid rgb(110 110 110 / 42%);
-    border-right: none;
-    border-top: none;
-    border-radius: 0 10px;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 7%;
+      height: 50px;
+      left: 10px;
+      top: 100%;
+      border: 1px solid var(--gray_36);
+      border-right: none;
+      border-top: none;
+      border-radius: 0 10px;
     }
-    &:before{
-    content: "";
-    position: absolute;
-    width: 7%;
-    height: 90px;
-    left: 10px;
-    bottom: 100%;
-    border: none;
-    border-left: 1px solid rgb(110 110 110 / 42%);
+    &:before {
+      content: "";
+      position: absolute;
+      width: 7%;
+      height: 90px;
+      left: 10px;
+      bottom: 100%;
+      border: none;
+      border-left: 1px solid var(--gray_36);
     }
-        }
-        .school-details{
+  }
+  .school-details {
     height: 100%;
     border-radius: 10px;
     align-self: end;
     width: 80%;
     padding: 1rem;
-    background: #10151e;
-    filter: drop-shadow(1px 2px 2px #0a0a0a);
-    color: #0a0a0a;
-    border-left: 1px solid rgb(58, 61, 68);
+    background: var(--dark_1);
+    filter: drop-shadow(1px 2px 2px var(--dark_1));
     background-position: 95% 50%;
     background-size: 15%;
     background-repeat: no-repeat;
-    .school-name{
-    color: #e84393;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: flex;
-    gap: .3rem;
+    .school-name {
+      color: #e84393;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: flex;
+      gap: 0.3rem;
     }
-    .more-details{
-            margin: .5rem 0 0;
-    list-style: none;
-    padding: 0 0 0 1.3rem;
-    color: #fff;
-    font-size: 12px;
-    li > b{
-    color: #fff;
-    margin: 0 0 .3rem 0;
-    display: inline-block;
+    .more-details {
+      margin: 0.5rem 0 0;
+      list-style: none;
+      padding: 0 0 0 1.3rem;
+      color: var(--white);
+      font-size: 12px;
+      li > b {
+        color: var(--white);
+        margin: 0 0 0.3rem 0;
+        display: inline-block;
+      }
     }
-    }
-        }
-    }
+  }
+}
