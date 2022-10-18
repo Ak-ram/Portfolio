@@ -48,9 +48,9 @@ const ProjectDescription = () => {
         </div>
         <div className="content">
           <div className="tags-container">
-            <span className="tag">
+            <div className="tag">
               <b>Tags:</b> <Filters filters={currentRepo.topics} />
-            </span>
+            </div>
           </div>
         </div>
       </div>
