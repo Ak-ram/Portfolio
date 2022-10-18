@@ -49,7 +49,7 @@ const ProjectDescription = () => {
         <div className="content">
           <div className="tags-container">
             <span className="tag">
-              tags: <Filters filters={currentRepo.topics} />
+              <b>Tags:</b> <Filters filters={currentRepo.topics} />
             </span>
           </div>
         </div>
