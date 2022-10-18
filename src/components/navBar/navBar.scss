@@ -1,51 +1,50 @@
-.navbar-container *{
-    transition: width .3s, flex-grow .3s, background .3s;
+.navbar-container * {
+  transition: width 0.3s, flex-grow 0.3s, background 0.3s;
 }
-.navbar-container{
-    position: fixed;
-    bottom: 0rem;
-    background: var(--dark_1);
-    width: 100vw;
-    z-index: 22;
-   
-    .navbar{
+.navbar-container {
+  position: fixed;
+  bottom: 0rem;
+  background: var(--dark_1);
+  width: 100vw;
+  z-index: 22;
+
+  .navbar {
     list-style: none;
     display: flex;
     justify-content: space-between;
     padding: 0.7rem;
     margin: 0;
-    background: var(--dark_2);//#ffffff0a;
+    background: var(--dark_2); //#ffffff0a;
     margin: 0.5rem;
     border-radius: 5px;
-    
-    
-    li{
+
+    li {
+      display: flex;
+      color: var(--gray_36);
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      a {
         display: flex;
-        color: #6e6e6e6e;
-        gap: .5rem;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
-        a{
-        display: flex;
-    align-items: center;
-    justify-content: center;
-        }
+      }
     }
-    span{
-        padding: .3rem;
+    span {
+      padding: 0.3rem;
     }
-    }
+  }
 }
 
-.hide{
-    opacity: 0;
-    width: 0;
-    display:none; // this property is very important here, as it fix design issue
+.hide {
+  opacity: 0;
+  width: 0;
+  display: none; // this property is very important here, as it fix design issue
 }
-.active{
-    color: #fff !important;
-    background: #ffffff0a; // rgb(0 80 120 / 23%);
-    border-radius: 5px;
-    flex-grow: .2;
+.active {
+  color: var(--white) !important;
+  background: var(--white_4); // rgb(0 80 120 / 23%);
+  border-radius: 5px;
+  flex-grow: 0.2;
 }
