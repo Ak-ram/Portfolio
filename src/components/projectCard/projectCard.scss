@@ -1,15 +1,14 @@
-.projectCard{
-    background: rgba(255, 255, 255, 0.04);
-    position: relative;
-    width: 48%;
-    border-radius: 10px;
-    height: 150px;
-    overflow: hidden;
-    background: url("https://www.freecodecamp.org/news/content/images/2021/10/github-on-the-hunt-for-a-new-diversity-lead-developers-techworld-github-universe-png-800_450.png");
-    background-size: contain;
-    box-shadow: inset 0px -4rem 0rem #151b26a3;
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    .details{
+.projectCard {
+  position: relative;
+  width: 48%;
+  border-radius: 10px;
+  height: 150px;
+  overflow: hidden;
+  background: url("https://www.freecodecamp.org/news/content/images/2021/10/github-on-the-hunt-for-a-new-diversity-lead-developers-techworld-github-universe-png-800_450.png");
+  background-size: contain;
+  box-shadow: inset 0px -4rem 0rem var(--dark_3);
+  border: 1px solid var(--white_4);
+  .details {
     position: absolute;
     height: 35%;
     bottom: 0;
@@ -20,38 +19,38 @@
     justify-content: space-between;
     // box-shadow: inset 0 2rem 6rem 0rem rgba(21, 27, 38, 0.831372549);
     // width: 100%;
-    .createdDate{
-        font-size: 10px;
-        color: rgb(0 160 240);
+    .createdDate {
+      font-size: 10px;
+      color: var(--cyan_light);
     }
-    .projectName{
-            font-size: 12px;
-    font-weight: bold;
+    .projectName {
+      font-size: 12px;
+      font-weight: bold;
     }
-    footer{
+    footer {
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      > span.projectTopics {
+        color: var(--pink_1);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 60%;
+      }
+      .external-links {
         display: flex;
-        // align-items: center;
-        justify-content: space-between;
-        font-size: 12px;
-        > span.projectTopics {
-                color: #e056fd;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 60%;
-        }
-        .external-links{
-                display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .4rem;
-        }
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+      }
     }
-    }
+  }
 }
 
-  @media screen and (max-width:350px){
-        .projectCard{
-            width: 90%;
-        }
-    }
+@media screen and (max-width: 350px) {
+  .projectCard {
+    width: 90%;
+  }
+}
