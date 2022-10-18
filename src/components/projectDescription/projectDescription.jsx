@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Outlet, useParams } from "react-router-dom";
-import { useGitHubRepos } from "../../exporter";
-import Breadcrumb from "../breadcrumb/breadcrumb";
-import avatar from "../../assests/avatar.webp";
+import { useGitHubRepos, Breadcrumb } from "../../exporter";
+// import  from "../breadcrumb/breadcrumb";
 import "./projectDescription.scss";
+import Filters from "../filters/filters";
 const ProjectDescription = () => {
   const { gitHubRepos } = useGitHubRepos();
   const params = useParams();
@@ -45,9 +45,19 @@ const ProjectDescription = () => {
             </div>
           </div>
         </div>
+        <div className="content">
+          <div className="tags-container">
+            <div className="tag">
+              <b>Tags:</b> <Filters filters={currentRepo.topics} />
+            </div>
+            <div className="description">
+              <p>{currentRepo.description}</p>
+            </div>
+          </div>
+        </div>
       </div>
-      {/* <p>{currentRepo.description}</p> */}
-      {/* <Outlet /> */}
+
+      <Outlet />
     </>
   );
 };
