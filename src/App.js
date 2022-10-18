@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import "./App.scss";
 function App() {
   const [loading, setLoading] = useState(true);
+  const [isDarkMode, setDarkMode] = useState(true);
   useEffect(() => {
     setTimeout(() => setLoading(false), 3500);
   }, []);
@@ -23,7 +24,7 @@ function App() {
     <Router>
       <DevBlogsContextProvider>
         <GitHubReposContextProvider>
-          <div className="app dark-mode">
+          <div className={`${isDarkMode ? "app dark-mode" : "app light-mode"}`}>
             <NavBar />
             <Routes>
               <Route path="/" element={<Profile />}></Route>
@@ -35,7 +36,12 @@ function App() {
               ></Route>
               <Route path="/blog" element={<Blog />}></Route>
               <Route path="/newsletter" element={<Newsletter />}></Route>
-              <Route path="/settings" element={<Settings />}></Route>
+              <Route
+                path="/settings"
+                element={
+                  <Settings isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
+                }
+              ></Route>
             </Routes>
           </div>
         </GitHubReposContextProvider>

@@ -1,5 +1,5 @@
-const Settings = () => {
-  return <button>Toggle</button>;
+const Settings = ({ setDarkMode, isDarkMode }) => {
+  return <button onClick={() => setDarkMode(!isDarkMode)}>toggle mode</button>;
 };
 
 export default Settings;
