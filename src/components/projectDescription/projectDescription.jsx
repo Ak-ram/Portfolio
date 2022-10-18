@@ -4,6 +4,7 @@ import { useGitHubRepos } from "../../exporter";
 import Breadcrumb from "../breadcrumb/breadcrumb";
 import avatar from "../../assests/avatar.webp";
 import "./projectDescription.scss";
+import Filters from "../filters/filters";
 const ProjectDescription = () => {
   const { gitHubRepos } = useGitHubRepos();
   const params = useParams();
@@ -43,6 +44,13 @@ const ProjectDescription = () => {
                 </footer>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="content">
+          <div className="tags-container">
+            <span className="tag">
+              tags: <Filters filters={currentRepo.topics} />
+            </span>
           </div>
         </div>
       </div>
