@@ -1,19 +1,19 @@
-   .topics{
-    list-style: none;
-    display: flex;
-    justify-content: left;
-    padding: 0;
-    font-size: 14px;
-    width: 100%;
-    overflow: scroll;
-    gap: .5rem;
-    align-items: center;
-    > .filter{
-            padding: .4rem .6rem;
-    background: rgb(0 40 60);
+.topics {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+  font-size: 14px;
+  width: 100%;
+  overflow: scroll;
+  gap: 0.5rem;
+  align-items: center;
+  > .filter {
+    padding: 0.4rem 0.6rem;
+    background: var(--cyan_dark);
     border-radius: 10px;
     line-height: 1;
-    color: #74b9ff;
+    color: var(--cyan_light);
     white-space: nowrap;
-    }
-   }
+  }
+}

@@ -1,17 +1,17 @@
-.about-me{
-  .about{
-        font-size: 13px;
+.about-me {
+  .about {
+    font-size: 13px;
     text-align: justify;
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--white_4);
     border-radius: 5px;
     padding: 0.5rem;
-    .read-more-btn{
-          color: #74b9ff;
-    text-decoration: underline;
-    margin-left: .1rem;
-    &:active{
-      color: rgb(0 160 240)
-    }
+    .read-more-btn {
+      color: var(--cyan_light);
+      text-decoration: underline;
+      margin-left: 0.1rem;
+      &:active {
+        color: var(--clr_cyan_dark_2);
+      }
     }
   }
 }

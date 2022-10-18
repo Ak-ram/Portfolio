@@ -1,8 +1,7 @@
-
 @use "../../styles/_functions.scss" as *;
 // @use "../../styles/_keyframes.scss" as *;
 
-.wrapper{
+.wrapper {
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -12,7 +11,7 @@
   // hide .wrapper after welcomeScreen animation ended
   animation: hide .4s 3s ease forwards;
 
-  h3{
+  h3 {
     font-size: 50px;
     color: #fff;
     height: 50vh;
@@ -22,29 +21,20 @@
     align-items: center;
     font-family: sans-serif;
     opacity: 0;
-    animation: fade ease .5s  2s forwards;
+    animation: fade ease 0.5s 2s forwards;
   }
-  span{
-  width: 11vw; // 10px 10pt 2rem 100vw
-  height: 0vw; // 10px 10pt
-  // border-radius: 100%;
-  background: transparent;
-  display: inline-block;
-  margin: .5rem;
-  box-shadow: blankShadow();
-  position: absolute;
-  transform-origin: 0 220px;
-  transform: rotate(calc(30deg * var(--i)));
-  left: 50%;
-  animation: rotate ease 2s alternate forwards;
+  span {
+    width: 11vw; // 10px 10pt 2rem 100vw
+    height: 0vw; // 10px 10pt
+    // border-radius: 100%;
+    background: transparent;
+    display: inline-block;
+    margin: 0.5rem;
+    box-shadow: blankShadow();
+    position: absolute;
+    transform-origin: 0 220px;
+    transform: rotate(calc(30deg * var(--i)));
+    left: 50%;
+    animation: rotate ease 2s alternate forwards;
+  }
 }
-}
-
-
-
-
-
-
-
-
-

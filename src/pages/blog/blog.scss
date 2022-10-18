@@ -1,18 +1,17 @@
-.blog-page{
-    color: #fff;
-    padding: .5rem;
-    .articles-container{
-        margin-bottom: 70px;
-    }
-        h2{
-            display: flex;
+.blog-page {
+  color: var(--white);
+  padding: 0.5rem;
+  .articles-container {
+    margin-bottom: 70px;
+  }
+  h2 {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 .5rem;
-    }
-    // .articles-container{
-    //         height: 326px;
-    // overflow: auto;
-    // }
-
+    padding: 0 0.5rem;
+  }
+  // .articles-container{
+  //         height: 326px;
+  // overflow: auto;
+  // }
 }
