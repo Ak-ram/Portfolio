@@ -1,0 +1,38 @@
+.details-page{
+        height: calc(100vh - 70px);
+    .banner{
+    background-image: url("http://wallup.net/wp-content/uploads/2017/03/15/165565-forest-trees-nature.jpg");
+    border-radius: 0 0 30px 30px;
+    padding: 1rem;
+    height: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 6rem black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    header.controls{
+        .breadcrumb-container{
+            margin: 0
+        }
+    }
+    .page-main-details{
+            flex-grow: .4;
+            .publish-info{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .publisher{
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 50px;
+                    border-radius: 50%;
+                    background: white;
+                }
+                }
+            }
+        }
+    }
+}
