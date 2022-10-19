@@ -55,11 +55,12 @@
 @media (min-width: 425px){
   .navbar-container{
     width: auto;
-    height: 100vh;
+    height: fit-content;
+    top: 0;
     right: 0;
     .navbar{
     flex-direction: column;
-    height: 100%;
+    // height: 100%;
     gap: 2rem;
     justify-content: start;
     li{
