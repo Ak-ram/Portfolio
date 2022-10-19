@@ -6,7 +6,6 @@ const Breadcrumb = () => {
   return (
     <div className="breadcrumb-container" onClick={() => navigate(-1)}>
       <IoIosArrowBack className="backIcon" />
-      <span>back</span>
     </div>
   );
 };
