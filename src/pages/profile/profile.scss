@@ -1,5 +1,6 @@
 .profile-page {
-  color: var(--white);
+  background: var(--white);
+  
   // padding: 0.5rem;
   margin-bottom: 52px;
   h5 {
@@ -10,7 +11,6 @@
     top:0;
     left: 0;
     width: 100%;
-    background: var(--white);
     color: var(--clr_black);
      .profile-img {
     width: 80px;
@@ -57,12 +57,11 @@
   }
   .profile-info {
     background: var(--dark_2);
-    border-radius: 50px 50px 0 0;
+    border-radius: 40px 40px 0 0;
     margin: -30px 0;
     position: relative;
-    padding: 3rem 1rem;
-   top: 50vh;
-
+    padding: 1rem;
+    top: 50vh;
    
   }
 }
