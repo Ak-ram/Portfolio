@@ -6,16 +6,17 @@ import {
   WorkSubSection,
   AboutMeSubSection,
   EducationSubSection,
+  Breadcrumb,
 } from "../../exporter.jsx";
 import avatar from "../../assests/avatar.webp";
 import "./profile.scss";
 const Profile = () => {
   return (
     <div className="profile-page">
-      <div className="banner"></div>
-      <div className="profile-info">
-        <img className="profile-img" src={avatar} alt="profile-img" />
+      <div className="banner">
+        <Breadcrumb />
         <div className="user-info">
+          <img className="profile-img" src={avatar} alt="profile-img" />
           <strong className="user-name">Akram A. Abdelbasir</strong>
           {/* <span className="user-location">
             <HiOutlineLocationMarker color="#fd79a8" size={15} />
@@ -23,6 +24,8 @@ const Profile = () => {
           </span> */}
           <span className="user-title">Front End Web Developer</span>
         </div>
+      </div>
+      <div className="profile-info">
         <div className="socials">
           <span className="linkedin">
             <SiLinkedin /> LinkedIn

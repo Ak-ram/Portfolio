@@ -7,32 +7,18 @@
   }
   .banner {
     height: calc((100vh - 70px) / 1.5);
-    /* width: 87%; */
-    background: url("https://avatars.githubusercontent.com/u/69124951?v=4");
-    background-size: 80vw;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 40%;
-  }
-  .profile-info {
-    background: var(--dark_2);
-    border-radius: 50px 50px 0 0;
-    margin: -30px 0;
-    position: relative;
-    padding: 3rem 1rem;
-    .profile-img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translate(-50%, -50%);
+    background: rgb(255 255 255);
+
+     .profile-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     }
     .user-info {
       display: flex;
       flex-direction: column;
       text-align: center;
+      align-items: center;
       gap: 0.2rem;
       strong.user-name {
         font-size: 18px;
@@ -43,6 +29,14 @@
         color: var(--clr_pink_2);
       }
     }
+  }
+  .profile-info {
+    background: var(--dark_2);
+    border-radius: 50px 50px 0 0;
+    margin: -30px 0;
+    position: relative;
+    padding: 3rem 1rem;
+   
 
     .socials {
       display: flex;
