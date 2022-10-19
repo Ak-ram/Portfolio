@@ -1,4 +1,4 @@
-import { IoIosArrowBack } from "../../exporter";
+import { IoIosArrowBack, MdUnfoldMore } from "../../exporter";
 import { useNavigate } from "react-router-dom";
 import "./breadcrumb.scss";
 const Breadcrumb = () => {
@@ -6,7 +6,7 @@ const Breadcrumb = () => {
   return (
     <div className="breadcrumb-container" onClick={() => navigate(-1)}>
       <IoIosArrowBack className="backIcon" />
-      <span>back</span>
+      <MdUnfoldMore />
     </div>
   );
 };
