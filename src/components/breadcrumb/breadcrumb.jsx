@@ -4,8 +4,8 @@ import "./breadcrumb.scss";
 const Breadcrumb = () => {
   const navigate = useNavigate();
   return (
-    <div className="breadcrumb-container" onClick={() => navigate(-1)}>
-      <IoIosArrowBack className="backIcon" />
+    <div className="breadcrumb-container">
+      <IoIosArrowBack className="backIcon" onClick={() => navigate(-1)} />
       <MdUnfoldMore />
     </div>
   );
