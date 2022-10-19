@@ -55,7 +55,7 @@
 @media (min-width: 425px){
   .navbar-container{
     width: auto;
-    height: 50%;
+    height: fit-content;
     top: 0;
     right: 0;
     .navbar{
@@ -67,7 +67,7 @@
       padding: 1rem;
     }
     li.active{
-      flex-grow: 1
+      // flex-grow: 0
     }
   }
   }
@@ -75,4 +75,18 @@
     display: none !important;
   }
   
+}
+
+@media (min-width: 1024px){
+.navbar-container{
+    width: 100%;
+    background: no-repeat;
+    position: relative;
+  .navbar{
+    flex-direction: row;
+    li > a > span{
+      display: block !important;
+    }
+  }
+}
 }
