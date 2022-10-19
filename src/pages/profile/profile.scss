@@ -1,12 +1,14 @@
 .profile-page {
   color: var(--white);
-  padding: 0.5rem;
+  // padding: 0.5rem;
   margin-bottom: 52px;
   h5 {
     margin-block: 1rem 0.5rem;
   }
   .banner {
     position: fixed;
+    top:0;
+    left: 0;
     width: 100%;
     background: var(--white);
     color: var(--clr_black);

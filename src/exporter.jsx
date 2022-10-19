@@ -41,7 +41,7 @@ export { default as EducationSubSection } from "./pages/profile/subSections/educ
 export { FcGraduationCap } from "react-icons/fc";
 export { FaRegComment } from "react-icons/fa";
 export { AiOutlineLike, AiOutlineSend } from "react-icons/ai";
-export { MdOutlineUpdate } from "react-icons/md";
+export { MdOutlineUpdate, MdUnfoldMore } from "react-icons/md";
 export { IoIosArrowBack } from "react-icons/io";
 export { ImHome } from "react-icons/im";
 export { GoLinkExternal } from "react-icons/go";
