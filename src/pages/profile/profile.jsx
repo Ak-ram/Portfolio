@@ -7,16 +7,21 @@ import {
   AboutMeSubSection,
   EducationSubSection,
   Breadcrumb,
+  useGitHubRepos,
 } from "../../exporter.jsx";
-import avatar from "../../assests/avatar.webp";
 import "./profile.scss";
 const Profile = () => {
+  const { gitHubRepos } = useGitHubRepos();
   return (
     <div className="profile-page">
       <div className="banner">
         <Breadcrumb />
         <div className="user-info">
-          <img className="profile-img" src={avatar} alt="profile-img" />
+          <img
+            className="profile-img"
+            src={gitHubRepos[0]?.owner?.avatar_url}
+            alt="profile-img"
+          />
           <strong className="user-name">Akram A. Abdelbasir</strong>
           {/* <span className="user-location">
             <HiOutlineLocationMarker color="#fd79a8" size={15} />
