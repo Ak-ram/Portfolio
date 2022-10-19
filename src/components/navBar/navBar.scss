@@ -15,7 +15,6 @@
     padding: 0.7rem;
     margin: 0;
     background: var(--dark_2); //#ffffff0a;
-    margin: 0.5rem;
     border-radius: 5px;
 
     li {
@@ -23,6 +22,7 @@
       color: var(--gray_36);
       gap: 0.5rem;
       align-items: center;
+      border-radius: 5px;
       justify-content: center;
       cursor: pointer;
       a {
@@ -45,6 +45,53 @@
 .active {
   color: var(--white) !important;
   background: var(--white_4); // rgb(0 80 120 / 23%);
-  border-radius: 5px;
   flex-grow: 0.2;
+}
+
+
+
+
+@media (min-width: 425px){
+  .navbar-container{
+    width: auto;
+    height: fit-content;
+    top: 0;
+    right: 0;
+    .navbar{
+    flex-direction: column;
+    height: 100%;
+    gap: 2rem;
+    justify-content: start;
+    li{
+      padding: 1rem;
+    }
+    li.active{
+      // flex-grow: 0
+    }
+  }
+  }
+  .active > a > span{
+    display: none !important;
+  }
+  
+}
+
+@media (min-width: 1024px){
+.navbar-container{
+    width: 100%;
+    background: no-repeat;
+    position: relative;
+  .navbar{
+    flex-direction: row;
+    li > a > span{
+      display: block !important;
+          opacity: 1;
+    width: auto;
+    display: block;
+    }
+    li:hover{
+      background: var(--white_4);
+    }
+  }
+}
 }
